@@ -10,11 +10,11 @@ categories:
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 projectbox">
 			<div class="head">
-				<a href="{{ project.url }}" class="off">{{ project.title }}</a>
+				<a href="{{ project.url | prepend: site.baseurl }}" class="off">{{ project.title }}</a>
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="note">
-				<a href="{{ project.url }}" class="off">{{ project.description }}</a>
+				<a href="{{ project.url | prepend: site.baseurl }}" class="off">{{ project.description }}</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">

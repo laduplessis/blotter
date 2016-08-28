@@ -14,13 +14,13 @@ layout: default
 			<div class="media">
 				<div class="media-body">
 					<div class="title media-heading">
-						<a href="{{ page.url }}" class="off">{{ page.title }}</a>
+						<a href="{{ page.url | prepend: site.baseurl }}" class="off">{{ page.title }}</a>
 					</div>
 					<p>
 					<div class="smallhead">
 						{{ page.date | date_to_string }}
 						{% if author %}
-						by <a class="off" href="{{ author.url }}">{{ author.handle }}</a>
+						by <a class="off" href="{{ author.url | prepend: site.baseurl }}">{{ author.handle }}</a>
 						{% endif %}		
 					</div>
 				</div>
@@ -36,11 +36,11 @@ layout: default
 		<div class="col-md-10">	
 			{% if page.image %}
 			{% if page.link %}
-			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image }}">
+			<a href="{{ page.link | prepend: site.baseurl }}">
+				<img class="offset" src="{{ page.image | prepend: site.baseurl }}">
 			</a>			
 			{% else %}
-			<img class="offset" src="{{ page.image }}">
+			<img class="offset" src="{{ page.image | prepend: site.baseurl }}">
 			{% endif %}				
 			{% endif %}
 			<div class="post">
