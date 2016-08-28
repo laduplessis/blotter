@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Matching R0 to cumulative prevalence in the H1N1 influenza pandemic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://bedford.io/feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/js/transition.js"></script>
+	<script src="/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+										
+					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/">bedford lab</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="active">
+						
+						<a href="/blog/">blog</a>
+						</li>
+						
+						<li>
+						
+						<a href="/papers/">papers</a>
+						</li>
+						
+						<li>
+						
+						<a href="/projects/">projects</a></li>	  
+						
+						<li>
+						
+						<a href="/team/">team</a></li>	  	  
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/blog/h1n1-pandemic/" class="off">Matching R0 to cumulative prevalence in the H1N1 influenza pandemic</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						14 Jun 2011
+						
+						by <a class="off" href="/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p>It&#39;s a reassuring thing when science works the way it&#39;s supposed to and the pieces mesh together.  A paper by McLeish and colleagues just came out looking at <a href="http://www.plosone.org/article/info:doi/10.1371/journal.pone.0020358">sero-prevalence of pandemic H1N1 from 2009 to winter 2010 in Scotland</a>.  This comes from measuring antibodies specific to pandemic H1N1 in a large sample of the population.  McLeish et al. find that through March 2010, approximately 35% of people in Scotland were infected with pandemic H1N1 influenza.  This number apparently came as a surprise to the media and the story has been getting a lot of play.</p>
+
+<p>However, what&#39;s cool is that this 35% number is exactly what we expected from our epidemiological models.  The basic reproductive number <i>R</i><sub>0</sub> measures the number of secondary infections expected to result from a given infection in a naive host population (a population with no previous exposure).  This number was quite small for the H1N1 pandemic, estimated <a href="http://www.sciencemag.org/content/324/5934/1557.abstract">at around 1.2 to 1.3 from the early upswing of the pandemic in 2009</a>.  The original paper detailing the SIR model (Kermack and McKendrick 1927) gives the formula: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Z</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><msub><mi>R</mi><mn>0</mn></msub><mi>Z</mi></mrow></msup></mrow><annotation encoding="application/x-tex">Z = 1 - e<sup>{-R_0</sup> Z}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8413309999999999em;"></span><span class="strut bottom" style="height:0.924661em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.07153em;">Z</span><span class="mrel">=</span><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">−</span><span class="mord"><span class="mord mathit" style="margin-right:0.00773em;">R</span><span class="vlist"><span style="top:0.15em;margin-right:0.07142857142857144em;margin-left:-0.00773em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-scriptstyle scriptscriptstyle cramped"><span class="mord mathrm">0</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit" style="margin-right:0.07153em;">Z</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span>, where <i>Z</i> represents the final size of an epidemic (in terms of proportion of the population infected).  Numerically solving this for these values of <i>R</i><sub>0</sub> gives an expected final epidemic size of 31% to 42%.  This is amazingly on target.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+

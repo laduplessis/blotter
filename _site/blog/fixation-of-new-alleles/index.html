@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Fixation of new alleles</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://bedford.io/feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/js/transition.js"></script>
+	<script src="/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+										
+					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/">bedford lab</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="active">
+						
+						<a href="/blog/">blog</a>
+						</li>
+						
+						<li>
+						
+						<a href="/papers/">papers</a>
+						</li>
+						
+						<li>
+						
+						<a href="/projects/">projects</a></li>	  
+						
+						<li>
+						
+						<a href="/team/">team</a></li>	  	  
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/blog/fixation-of-new-alleles/" class="off">Fixation of new alleles</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						01 Mar 2013
+						
+						by <a class="off" href="/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			
+			<img class="offset" src="/images/blog/chance_of_fixation.png">
+							
+			
+			<div class="post">
+				<p>More population genetics...  Here, I wanted to look at the process of fixation, that is the process by which a mutant allele comes to take over the entire population.  There is a very classic result by Kimura that the chance of fixation depends on population frequency <i>p</i> and the product of the effective population size <i>N</i> and the selective advantage of the mutant allele <i>s</i>, such that 
+<div style='text-align: center; margin-top: 0.5em; margin-bottom: 0.5em;'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi><mo>(</mo><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>4</mn><mi>N</mi><mi>s</mi><mi>p</mi></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>4</mn><mi>N</mi><mi>s</mi></mrow></msup></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \mathrm{Pr(fix)} = \frac{ 1-e<sup>{-4</sup> N s p} }{ 1 - e<sup>{-4</sup> N s} }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.5183309999999999em;"></span><span class="strut bottom" style="height:2.287661em;vertical-align:-0.7693300000000001em;"></span><span class="base displaystyle textstyle uncramped"><span class="reset-textstyle displaystyle textstyle uncramped"><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">P</span><span class="mord mathrm">r</span><span class="mopen">(</span><span class="mord mathrm" style="margin-right:0.07778em;">f</span><span class="mord mathrm">i</span><span class="mord mathrm">x</span><span class="mclose">)</span></span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord">−</span><span class="mord mathrm">4</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">s</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">−</span><span class="mord mathrm">4</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">s</span><span class="mord mathit">p</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></span></div>
+for diploid populations and
+<div style='text-align: center; margin-top: 0.5em; margin-bottom: 0.5em;'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">r</mi><mo>(</mo><mi mathvariant="normal">f</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi><mo>)</mo></mrow><mo>=</mo><mfrac><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>N</mi><mi>s</mi><mi>p</mi></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mo>−</mo><mn>2</mn><mi>N</mi><mi>s</mi></mrow></msup></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \mathrm{Pr(fix)} = \frac{ 1-e<sup>{-2</sup> N s p} }{ 1 - e<sup>{-2</sup> N s} }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.5183309999999999em;"></span><span class="strut bottom" style="height:2.287661em;vertical-align:-0.7693300000000001em;"></span><span class="base displaystyle textstyle uncramped"><span class="reset-textstyle displaystyle textstyle uncramped"><span class="mord displaystyle textstyle uncramped"><span class="mord mathrm">P</span><span class="mord mathrm">r</span><span class="mopen">(</span><span class="mord mathrm" style="margin-right:0.07778em;">f</span><span class="mord mathrm">i</span><span class="mord mathrm">x</span><span class="mclose">)</span></span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.289em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord">−</span><span class="mord mathrm">2</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">s</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathrm">1</span><span class="mbin">−</span><span class="mord"><span class="mord mathit">e</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">−</span><span class="mord mathrm">2</span><span class="mord mathit" style="margin-right:0.10903em;">N</span><span class="mord mathit">s</span><span class="mord mathit">p</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></span></div>
+for haploid populations.  This result is most commonly used to gauge the likelihood that a new mutant entering the population at 1/2<i>N</i> or 1/<i>N</i> frequency will fix.</p>
+
+<p>Here, I&#39;m showing the chance that a polymorphism fixes in a haploid population as a function of its frequency in the population <i>p</i> and its scaled selection advantage (or disadvantage) <i>Ns</i>.  You can see that when <i>Ns</i> = 0, the chance of fixation is just equal to the mutant&#39;s frequency.  If an neutral allele is at 50% frequency in the population, it has a 50% chance of fixing.  If a mutation is selectively advantageous, it has a greater chance of fixing than expected from its frequency alone, and likewise, if a mutation is deleterious, it will fix less often than expected from its frequency.  A decently advantageous mutant (<i>Ns</i> = 10) is subject to random loss when it&#39;s at low frequency, but will almost certainly fix if it gets to moderate frequency in the population.  If it gets to just 3.5% frequency in the population, then it will have a 50% chance of fixing.  Conversely, a decently deleterious mutant (<i>Ns</i> = -10) needs to get to high frequency before it has any chance at all of fixing.  If it gets to 96.5% frequency, then it will have a 50% chance of fixing.</p>
+
+<p>What&#39;s really striking to me, is that this makes it clear that there&#39;s a snowball effect for advantageous mutants, where getting to some low frequency helps them to get to higher frequency, which in turns helps them to get to even higher frequency and eventually fix.  This can be seen as a decreasing slope of the chance of fixation as frequency increases.  Every step toward fixation is progressively easier for advantageous alleles.  On the other hand, deleterious mutants face an uphill battle.  Getting to low frequency is relatively easy, but every step past this gets more and more difficult.  This can be seen as in increasing slope as allele frequency increases.  Every step toward fixation is progressively harder for deleterious alleles.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+
