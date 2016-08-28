@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Some thoughts on a GitHub of Science</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://laduplessis.github.io//feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/Taming_the_BEAST_blotter/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/Taming_the_BEAST_blotter/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'laduplessis.github.io/Taming_the_BEAST_blotter');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/Taming_the_BEAST_blotter/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/Taming_the_BEAST_blotter/js/transition.js"></script>
+	<script src="/Taming_the_BEAST_blotter/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+										
+					<object class="logo navbar-brand" data="/Taming_the_BEAST_blotter/images/logo_bw.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/Taming_the_BEAST_blotter/">Taming the BEAST</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="active">
+						
+						<a href="/Taming_the_BEAST_blotter/blog/">blog</a>
+						</li>
+						
+						<li>
+						
+						<a href="/Taming_the_BEAST_blotter/projects/">projects</a></li>	  
+						
+						<li>
+						
+						<a href="/Taming_the_BEAST_blotter/team/">team</a></li>	  	  
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/Taming_the_BEAST_blotter/blog/github-of-science/" class="off">Some thoughts on a GitHub of Science</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						20 Feb 2012
+						
+						by <a class="off" href="/Taming_the_BEAST_blotter/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			
+			<img class="offset" src="/Taming_the_BEAST_blotter/images/blog/github_large.png">
+							
+			
+			<div class="post">
+				<p>Lately, I&#39;ve been thinking more about issues surrounding Open Science and scientific publishing.  This post is in part a response to posts by <a href="http://schamberlain.github.com/scott/2012/02/13/a-github-publishing-model/">Scott Chamberlain</a> and <a href="http://marciovm.com/i-want-a-github-of-science/">Marcio von Muhlen</a>.  Marcio&#39;s idea represents a major call-to-arms for innovation in how science is conducted and communicated.  He states that &quot;we need a social network of science, meaning scientific bundles of knowledge must be structured and accessible by API, with the connections among those bundles and appropriate utility metrics being what connects and prioritizes scientists.&quot;  I would completely agree here.  Making small steps, this is why I chose to post my latest paper to the <a href="http://arxiv.org/abs/1111.4579">arXiv</a> and to <a href="http://trvrb.github.com/canalization/">GitHub itself</a>.</p>
+
+<p>Scott questions whether GitHub could be useful as a scientific publishing platform, which I think is a very different thing from Marcio&#39;s GitHub of Science.  Here, as publishing platform, I think the primary advantage of GitHub is the versioning system at its heart.  This would allow an audience to follow a scientific story as is progresses, but would also allow the history of a project to be queried and individual contributions to be easily assessed (at least in terms of writing and coding).  If we want to move towards a <a href="http://www.michaeleisen.org/blog/?p=694">system of post publication peer review</a> there needs to be a good way of continually updating a manuscript and making it obvious what each new version brings.  A nice open source analogy here (that Scott originally mentioned on Twitter) is the idea of peer review as opening <i>issues</i>.  Right now, in Google Code or GitHub, you can open an issue with a project documenting a bug or other sort of problem.  Developers can then respond to this issue and make the appropriate changes to their project (that are then linked to the issue, making tracking of specific revisions straight-forward).  Peer review acts in a very similar fashion, documenting inadequacies with the approach taken in a scientific manuscript.  So, please, please, <a href="http://github.com/trvrb/canalization/issues">open an issue with the canalization paper</a>.  I would be happy to try to attend to it.</p>
+
+<p>However, I think the potential for something like a GitHub of Science goes much farther than just a publishing platform.  In the current paradigm, manuscripts are built on top of manuscripts, but there is a lot of replicated effort.  Let&#39;s say someone thinks of a small, but highly relevant, addition to a paper.  For example, in the case of the canalization paper, what is the effect of vaccination on the antigenic evolution of influenza?  This could be a one figure addition to the present paper.  However, in the current system, doing this research would entail rerunning a lot of the model basics, writing a new paper, with a new introduction and a new discussion, all centered around vaccination.  This one-figure vaccination addendum may not make a paper by itself, but it would be great if it could somehow be integrated into the literature.</p>
+
+<p>The basic paradigm of GitHub is the <i>forking</i> of a software project.  I write some code, you take what I&#39;ve done and make some additions.  I then have the option of folding your changes back into my version, or if I&#39;m not happy with your changes, the two versions continue on their separate ways.  With something like a GitHub of Science, someone else could fork my canalization paper, code and all, and append a short section and figure on vaccination.  I could choose to <i>pull</i> this addition, integrating it as part of the paper, or the forked version could exist on its own.  Here, I&#39;m imagining a scenario where most collaboration manifests as a network of fork and pull requests between co-authors, where a story emerges by combining a number of individual contributions.</p>
+
+<p>In a conversation with <a href="http://benfry.com/">Ben Fry</a> about this, he commented that the most beneficial aspect of peer review is  that it forces scientists to work in such a way that their research can be reviewed, and, at least in theory, replicated.  Working in such a way that research could be <i>forked</i> would be a much higher, better, bar in terms of documentation and reproducibility.  There is continual innovation in terms of models for Open Science (<a href="http://stackexchange.com/">Stack Exchange</a>, <a href="http://arxiv.org/">arXiv</a>, <a href="http://github.com/">GitHub</a>, etc...).  I&#39;m hopeful that we can eventually come up with something that gains some traction.  However, I&#39;m sure that whatever we start with, it has to produce a publishable end product, so that both old and new systems could continue forward, existing side-by-side.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+

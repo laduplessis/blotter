@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Integrating influenza antigenic dynamics with molecular evolution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://laduplessis.github.io//feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/Taming_the_BEAST_blotter/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/Taming_the_BEAST_blotter/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'laduplessis.github.io/Taming_the_BEAST_blotter');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/Taming_the_BEAST_blotter/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/Taming_the_BEAST_blotter/js/transition.js"></script>
+	<script src="/Taming_the_BEAST_blotter/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+										
+					<object class="logo navbar-brand" data="/Taming_the_BEAST_blotter/images/logo_bw.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/Taming_the_BEAST_blotter/">Taming the BEAST</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="active">
+						
+						<a href="/Taming_the_BEAST_blotter/blog/">blog</a>
+						</li>
+						
+						<li>
+						
+						<a href="/Taming_the_BEAST_blotter/projects/">projects</a></li>	  
+						
+						<li>
+						
+						<a href="/Taming_the_BEAST_blotter/team/">team</a></li>	  	  
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/Taming_the_BEAST_blotter/blog/influenza-antigenic-dynamics/" class="off">Integrating influenza antigenic dynamics with molecular evolution</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						03 May 2013
+						
+						by <a class="off" href="/Taming_the_BEAST_blotter/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p>The influenza virus shows a remarkable capacity to evolve to escape human immunity.  Many other viruses, like measles, do not have this capacity.  After infection with measles, a person gains life-long immunity to the virus, and hence measles has become constrained to be a childhood infection.  Continual antigenic evolution in influenza necessitates frequent vaccine updates to provide sufficient protection to circulating strains.  </p>
+
+<p>Antigenic differences between strains are commonly quantified using the <a href="http://en.wikipedia.org/wiki/Hemagglutination_assay">hemagglutination inhibition (HI)</a> assay, which measures the ability of antibodies created against one strain to interfere with virus from another strain.  The resulting HI data is represented as a sparse matrix of comparisons between viruses from strains A, B, C... and sera from strains X, Y, Z...  Taken by itself, this matrix is difficult to work with.  Experienced virologists can pick up the loss of reactivity between groups of viruses in the noisy HI data, but these patterns are not fully quantified.</p>
+
+<p>In our new paper, <a href="http://arxiv.org/abs/1304.3637">available on the arXiv</a>, we extend techniques of <a href="http://en.wikipedia.org/wiki/Multidimensional_scaling">multidimensional scaling</a> (MDS) pioneered by <a href="http://antigenic-cartography.org/">Derek Smith and colleagues</a> for the analysis of influenza antigenic data.  Here, we attempted to bring the MDS antigenic model into a fully Bayesian framework and refer to the revised technique as Bayesian MDS (BMDS).  In this model, viruses and sera are represented as 2D coordinates on an antigenic map in which their pairwise distances yield expectations for the HI titers, with antigenically similar viruses lying close to one another and antigenically distant viruses lying far apart.</p>
+
+<p><img src="/images/blog/bmds_h3.png" alt=""></p>
+
+<p>By placing antigenic cartography in a Bayesian context, we are able to integrate other data sources, most notably sequence data.  In this case, genetic sequences provide an evolutionary tree relating virus strains and we assume that antigenic location evolves along this tree in a 2D diffusion process.  This process imposes a prior on antigenic locations in which evolutionary similar viruses have a prior expectation of lying close to one another on the map.  In the paper, we use this BMDS / diffusion model to investigate patterns of antigenic evolution in 4 circulating lineages of influenza and show that antigenic drift determines to a large degree incidence patterns across time and across lineages.</p>
+
+<p>The paper is also <a href="https://github.com/trvrb/flux">up on GitHub</a>, which I&#39;ll keep updating as it goes through the review process.  The BMDS model is implemented in the software package <a href="http://beast.bio.ed.ac.uk/">BEAST</a> and is available in the latest source code.  I hope to provide tutorials on running the BMDS model in the not-to-distant future. <i>Mirrored as a <a href="http://haldanessieve.org/2013/05/03/our-paper-integrating-influenza-antigenic-dynamics-with-molecular-evolution/">guest post on Haldane&#39;s Sieve</a>.</i></p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+

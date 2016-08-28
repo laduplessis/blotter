@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Programmer for real-time phylodynamic analysis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://laduplessis.github.io//feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/Taming_the_BEAST_blotter/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/Taming_the_BEAST_blotter/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'laduplessis.github.io/Taming_the_BEAST_blotter');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/Taming_the_BEAST_blotter/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/Taming_the_BEAST_blotter/js/transition.js"></script>
+	<script src="/Taming_the_BEAST_blotter/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+										
+					<object class="logo navbar-brand" data="/Taming_the_BEAST_blotter/images/logo_bw.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/Taming_the_BEAST_blotter/">Taming the BEAST</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="active">
+						
+						<a href="/Taming_the_BEAST_blotter/blog/">blog</a>
+						</li>
+						
+						<li>
+						
+						<a href="/Taming_the_BEAST_blotter/projects/">projects</a></li>	  
+						
+						<li>
+						
+						<a href="/Taming_the_BEAST_blotter/team/">team</a></li>	  	  
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/Taming_the_BEAST_blotter/blog/programmer-real-time-analysis/" class="off">Programmer for real-time phylodynamic analysis</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						04 Apr 2016
+						
+						by <a class="off" href="/Taming_the_BEAST_blotter/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p>We&#39;re looking for a programmer to help with the current push towards real-time analysis of virus evolution. The advertisement follows:</p>
+
+<blockquote>
+<p>A programmer position is available immediately in the Bedford lab at the Fred Hutch to develop inference algorithms and interactive visualizations of viral outbreaks using DNA/RNA sequence data.</p>
+
+<p>There has been remarkable progress in <a href="https://en.wikipedia.org/wiki/Viral_phylodynamics">phylodynamic</a> methods which use viral genetic sequence data to infer patterns of epidemic growth and geographic spread as well as patterns of adaptive evolution and strain turnover. However, until recently, these methods were solely applied in retrospective analyses to understand past events. With increasing availability and timeliness of sequence data, it is now becoming possible to perform and share phylodynamic analyses in near real-time. </p>
+
+<p>Our group is leading this transition to real-time analysis and prediction. Current efforts by the lab include analyses of influenza (<a href="http://nextflu.org">nextflu.org</a>), Ebola (<a href="http://ebola.nextstrain.org">ebola.nextstrain.org</a>) and Zika (<a href="http://nextstrain.org/zika">nextstrain.org/zika/</a>) viruses. These sites are already being used by the Centers for Disease Control and the World Health Organization, particularly for influenza vaccine strain selection, and we believe further development will lead to substantial public health benefit. This project has grown to the point where we need a full-time programmer to generalize, refactor, and maintain our platform for data ingestion, processing and visualization.</p>
+
+<p>The ideal candidate would have experience in Python (informatic processing pipeline <a href="https://github.com/blab/nextflu/tree/master/augur">augur</a> is written in Python) and Javascript (browser-based visualization <a href="https://github.com/blab/nextflu/tree/master/auspice">auspice</a> is written in Javascript). Experience with databases (we are using <a href="http://www.rethinkdb.com/">rethinkdb</a> for sequence organization) or web application programming would be a plus. The new team member would contribute to refactor the current codebase to make a more general and extensible platform for informatic processing and also to speed up the auspice visualization by reactive JSON pull-downs. Additional development would focus on extending pipelines to other viruses / pathogens and building new features for current viruses, as well as, implementing a robust <a href="https://www.docker.com/">Docker</a>-based deployment pipeline.</p>
+
+<p>The Fred Hutch is located in South Lake Union in Seattle, WA and offers a dynamic work environment with cutting-edge science and computational resources. The position is available immediately with flexible starting dates. Informal inquires are welcome. Applications will be accepted until the position is filled.  We offer a competitive salary commensurate with skills and experience, along with benefits. The Fred Hutch and the Bedford lab are committed to improving diversity in the computational sciences. Applicants of diverse backgrounds are particularly encouraged to apply.</p>
+
+<p>For more information about the lab, please see the our website at <a href="http://bedford.io">bedford.io</a>. To apply for the position please send (1) current resume, (2) code samples or links to published/distributed code and (3) contact information for two references to trevor<span style="display:none">obfuscate</span>@bedford.io.</p>
+</blockquote>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+
