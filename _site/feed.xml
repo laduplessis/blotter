@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Bedford Lab Research - Blog</title>
+		<description>Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch</description>
+		<link>http://bedford.io</link>
+		<atom:link href="http://bedford.io/feed.category.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Zika sequencing in Brazil (or Trevor does fieldwork)</title>
+				<description>&lt;p&gt;I&amp;#39;m at the Rio airport now, heading home after 9 days in Brazil as part of the ground team of the &lt;a href=&quot;http://zibraproject.github.io/about/&quot;&gt;ZiBRA project&lt;/a&gt;. As part of the team, I traveled from Natal to Recife along the northeastern coast collecting clinical samples for mobile Zika genome sequencing and analysis. This has been an illuminating experience and I&amp;#39;m grateful to &lt;a href=&quot;http://lab.loman.net/&quot;&gt;Nick&lt;/a&gt;, &lt;a href=&quot;http://evolve.zoo.ox.ac.uk/Evolve/Nuno_Faria.html&quot;&gt;Nuno&lt;/a&gt;, &lt;a href=&quot;http://www.pgpat.ufba.br/docenteDetalhes.asp?id=FS0K6QkMSK&quot;&gt;Luiz&lt;/a&gt; and the &lt;a href=&quot;http://zibraproject.github.io/people/&quot;&gt;rest of the team&lt;/a&gt; for inviting me to be part of this.&lt;/p&gt;
+
+&lt;p&gt;I truly believe that pathogen genome analysis can contribute significantly to epidemiological understanding and outbreak response. However, for this to work, genomes need to be produced and shared quickly enough so that epidemiological insights are &lt;em&gt;actionable&lt;/em&gt;. &lt;a href=&quot;/blog/scientific-publishing-practices/&quot;&gt;This was a major issue for much of the West African Ebola outbreak&lt;/a&gt;, limiting the utility of genomic approaches. The situation is somewhat better for the ongoing Zika epidemic in the Americas in that multiple groups are releasing a genome here and a genome there, but overall depth is still lacking with just 64 outbreak genomes available at this time. The ZiBRA project is an attempt to do real-time genomic surveillance of Zika in Brazil. If all goes according to plan, this project will rapidly provide a dataset for downstream analysis of Zika evolution and epidemiology, aiding understanding of virus spread and epidemic dynamics.&lt;/p&gt;
+
+&lt;p&gt;The trip was incredibly eye-opening for me in terms of the messy reality of viral surveillance and the even-more-messy details of Zika surveillance in Brazil. The basic pipeline for Zika surveillance in Brazil by the Ministry of Health (much like other viral surveillance systems) goes something like:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Patient presents at a clinic with symptoms consistent with infection (fever, rash, etc...).&lt;/li&gt;
+&lt;li&gt;The clinician sends a blood sample to the regional diagnostic laboratory (these are referred to as LACENs).&lt;/li&gt;
+&lt;li&gt;The LACEN extracts viral RNA and runs &lt;a href=&quot;https://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction&quot;&gt;RT-PCR&lt;/a&gt; to confirm viral presence in the sample.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The RT diagnostic is particularly important as clinical symptoms are difficult to distinguish between Zika, dengue and Chikungunya.  With the &lt;a href=&quot;http://zibraproject.github.io/roadtrip/&quot;&gt;road trip&lt;/a&gt;, we were able to bring in reagents and expertise lacked by the LACENs and burn through a large number of banked clinical specimens to search for additional RT-positives. In some cases, we were able to confirm Zika diagnoses of pregnant women who presented the week before. We reported postive and negative RT diagnostics back to the LACENs. RT-positive samples were then brought forward for &lt;a href=&quot;http://zibraproject.github.io/blog/multiplex-pcr-protocol/&quot;&gt;PCR amplification&lt;/a&gt; and &lt;a href=&quot;http://zibraproject.github.io/blog/protocol-low-input-native-barcoding-protocol/&quot;&gt;MinION sequencing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I did help a bit with the lab-work, but I ended up mostly running point on metadata. As might be expected given the circumstances, the lab work was incredibly chaotic and I spent most of my time trying to keep sample data from &lt;em&gt;unraveling&lt;/em&gt;. To keep epi metadata attached to a sample required maintaining a linkage between the numbers written from tube-to-tube-to-tube and the original LACEN ID. It also required digging through the LACEN diagnostic reports to pull in important epi metadata like date of collection and municipality of residence. I&amp;#39;ve never quite appreciated before the degree to which data wants to come apart if continual attention is not paid (proper data is an ordered state that is constantly under attack by entropic forces). I hope I&amp;#39;ve left the team with &lt;a href=&quot;http://zibraproject.github.io/blog/metadata-wrangling/&quot;&gt;systems in place to promote further metadata collection&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We finished base calling and assembly on the first MinION runs on June 8, but realized they need resequencing to have good coverage. That said, we should be releasing genomes soon and hope to keep a flow of genomes going through the next few months. I&amp;#39;m super excited to be able to rapidly incorporate these genomes into &lt;a href=&quot;http://nextstrain.org/zika/&quot;&gt;nextstrain.org&lt;/a&gt; and help with tracking Zika evolution and epidemic spread.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1183.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1183.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1190.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1190.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1210.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1210.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1266.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1266.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1434.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1434.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1481.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1481.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1541.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1541.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1577.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1577.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1582.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1582.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1606.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1606.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1629.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1629.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-2&quot;&gt;
+        &lt;a href=&quot;/images/blog/zibra_photos/img_1632.jpg&quot;&gt;
+            &lt;img src=&quot;/images/blog/zibra_photos_thumbnails/img_1632.jpg&quot;&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;bigspacer&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;
+</description>
+				<pubDate>Fri, 10 Jun 2016 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/zibra-project/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/zibra-project/</guid>
+			</item>
+		
+			<item>
+				<title>Programmer for real-time phylodynamic analysis</title>
+				<description>&lt;p&gt;We&amp;#39;re looking for a programmer to help with the current push towards real-time analysis of virus evolution. The advertisement follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A programmer position is available immediately in the Bedford lab at the Fred Hutch to develop inference algorithms and interactive visualizations of viral outbreaks using DNA/RNA sequence data.&lt;/p&gt;
+
+&lt;p&gt;There has been remarkable progress in &lt;a href=&quot;https://en.wikipedia.org/wiki/Viral_phylodynamics&quot;&gt;phylodynamic&lt;/a&gt; methods which use viral genetic sequence data to infer patterns of epidemic growth and geographic spread as well as patterns of adaptive evolution and strain turnover. However, until recently, these methods were solely applied in retrospective analyses to understand past events. With increasing availability and timeliness of sequence data, it is now becoming possible to perform and share phylodynamic analyses in near real-time. &lt;/p&gt;
+
+&lt;p&gt;Our group is leading this transition to real-time analysis and prediction. Current efforts by the lab include analyses of influenza (&lt;a href=&quot;http://nextflu.org&quot;&gt;nextflu.org&lt;/a&gt;), Ebola (&lt;a href=&quot;http://ebola.nextstrain.org&quot;&gt;ebola.nextstrain.org&lt;/a&gt;) and Zika (&lt;a href=&quot;http://nextstrain.org/zika&quot;&gt;nextstrain.org/zika/&lt;/a&gt;) viruses. These sites are already being used by the Centers for Disease Control and the World Health Organization, particularly for influenza vaccine strain selection, and we believe further development will lead to substantial public health benefit. This project has grown to the point where we need a full-time programmer to generalize, refactor, and maintain our platform for data ingestion, processing and visualization.&lt;/p&gt;
+
+&lt;p&gt;The ideal candidate would have experience in Python (informatic processing pipeline &lt;a href=&quot;https://github.com/blab/nextflu/tree/master/augur&quot;&gt;augur&lt;/a&gt; is written in Python) and Javascript (browser-based visualization &lt;a href=&quot;https://github.com/blab/nextflu/tree/master/auspice&quot;&gt;auspice&lt;/a&gt; is written in Javascript). Experience with databases (we are using &lt;a href=&quot;http://www.rethinkdb.com/&quot;&gt;rethinkdb&lt;/a&gt; for sequence organization) or web application programming would be a plus. The new team member would contribute to refactor the current codebase to make a more general and extensible platform for informatic processing and also to speed up the auspice visualization by reactive JSON pull-downs. Additional development would focus on extending pipelines to other viruses / pathogens and building new features for current viruses, as well as, implementing a robust &lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt;-based deployment pipeline.&lt;/p&gt;
+
+&lt;p&gt;The Fred Hutch is located in South Lake Union in Seattle, WA and offers a dynamic work environment with cutting-edge science and computational resources. The position is available immediately with flexible starting dates. Informal inquires are welcome. Applications will be accepted until the position is filled.  We offer a competitive salary commensurate with skills and experience, along with benefits. The Fred Hutch and the Bedford lab are committed to improving diversity in the computational sciences. Applicants of diverse backgrounds are particularly encouraged to apply.&lt;/p&gt;
+
+&lt;p&gt;For more information about the lab, please see the our website at &lt;a href=&quot;http://bedford.io&quot;&gt;bedford.io&lt;/a&gt;. To apply for the position please send (1) current resume, (2) code samples or links to published/distributed code and (3) contact information for two references to trevor&lt;span style=&quot;display:none&quot;&gt;obfuscate&lt;/span&gt;@bedford.io.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+				<pubDate>Mon, 04 Apr 2016 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/programmer-real-time-analysis/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/programmer-real-time-analysis/</guid>
+			</item>
+		
+			<item>
+				<title>Seasonal influenza circulation patterns and future projections</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://neherlab.wordpress.com/&quot;&gt;Richard Neher&lt;/a&gt; and I have compiled a &lt;a href=&quot;http://nextflu.org/reports/feb-2016/&quot;&gt;report on recent patterns of seasonal influenza virus evolution&lt;/a&gt; with projections for future clade behavior based on the &lt;a href=&quot;http://nextflu.org&quot;&gt;nextflu&lt;/a&gt; platform. This is designed to be looking forward to the 2016-2017 flu season. Lots of interesting behavior in H3N2 and H1N1pdm viruses. Within H3N2, the clade 3c2.a has continued to predominate throughout the last year and now genetic diversity is accumulating within 3c2.a. The issue is now watching for new variants within 3c2.a that may be antigenically distinct and thus spread through the virus population. H1N1pdm viruses have seen the rapid rise a novel clade denoted 6b.2 during 2015. This clade is demarcated by the substitutions 84N/162N/216T. The joint substitutions 162N/216T have risen especially rapidly with this season&amp;#39;s Northern Hemisphere epidemic comprised of almost entirely 6b.2 viruses. However, detailed antigenic characterization is necessary to determine whether the seasonal influenza vaccine warrants updating.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/feb-2016-nextflu-report/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/feb-2016-nextflu-report/</guid>
+			</item>
+		
+			<item>
+				<title>Strain-specific vaccine efficacy in the RTS,S malaria vaccine</title>
+				<description>&lt;p&gt;In collaboration with &lt;a href=&quot;https://www.broadinstitute.org/bios/daniel-neafsey&quot;&gt;Dan Neafsey&lt;/a&gt; at the Broad Institute, &lt;a href=&quot;http://www.hsph.harvard.edu/dyann-wirth/&quot;&gt;Dyann Wirth&lt;/a&gt; at Harvard, &lt;a href=&quot;https://www.fredhutch.org/en/labs/profiles/gilbert-peter.html&quot;&gt;Peter Gilbert&lt;/a&gt; and &lt;a href=&quot;https://www.fredhutch.org/en/labs/profiles/juraska-michal.html&quot;&gt;Michal Juraska&lt;/a&gt; at the Fred Hutch and a large team of researchers, we&amp;#39;ve just published &lt;a href=&quot;/papers/neafsey-rtss-sieve/&quot;&gt;a paper&lt;/a&gt; in the &lt;a href=&quot;http://dx.doi.org/10.1056/NEJMoa1505819&quot;&gt;New England Journal of Medicine&lt;/a&gt; showing strain-specific vaccine efficacy in a recent malaria vaccine trial. We found that the &lt;a href=&quot;https://en.wikipedia.org/wiki/RTS,S&quot;&gt;RTS,S malaria vaccine&lt;/a&gt; worked better against strains that were genetically matched to the vaccine antigen compared to unmatched strains. The right hand figure shows that across study sites, parasites matched to the vaccine strain (3D7) are overrepresented among the control group, indicating that the vaccine better protected against infection by 3D7 than against other strains. Proper statistical analysis shows that there was a 1-year vaccine efficacy of 50% against strains perfectly matched to the vaccine antigen and a 1-year vaccine efficacy of 33% against unmatched strains. The vaccine strain 3D7 is at low (~10%) frequency in Sub-Saharan Africa. This suggests that vaccine efficacy could be straight-forwardly improved by just swapping 3D7 for a more common haplotype.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s interesting to see strain-specific vaccine for malaria, suggesting that like flu, a good vaccine requires matching to the circulating pathogen strains. This was a fun study to participate in. Hopefully, we could see further improvements to the RTS,S vaccine. Even at current efficacy levels, RTS,S is estimated to have a cost effectiveness of &lt;a href=&quot;http://www.malariajournal.com/content/13/1/66&quot;&gt;~$150 per disability-adjusted life year&lt;/a&gt; saved.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/rtss-sieve/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/rtss-sieve/</guid>
+			</item>
+		
+			<item>
+				<title>Analysis and visualization of influenza antigenic evolution</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://neherlab.wordpress.com/&quot;&gt;Richard Neher&lt;/a&gt; and &lt;a href=&quot;http://www.kitp.ucsb.edu/shraiman/&quot;&gt;Boris Shraiman&lt;/a&gt;, along with myself, &lt;a href=&quot;http://www.vet.cam.ac.uk/directory/russell&quot;&gt;Colin Russell&lt;/a&gt; and &lt;a href=&quot;http://www.crick.ac.uk/research/worldwide-influenza-centre/&quot;&gt;Rod Daniels&lt;/a&gt; have just completed a new analysis of antigenic drift in the seasonal influenza virus. We&amp;#39;ve put a manuscript on &lt;a href=&quot;/papers/neher-titers/&quot;&gt;&amp;quot;Prediction, dynamics, and visualization of antigenic phenotypes of seasonal influenza viruses&amp;quot;&lt;/a&gt; up on the &lt;a href=&quot;http://arxiv.org/abs/1510.01195&quot;&gt;arXiv&lt;/a&gt; and have created an interactive visualization of our model at &lt;a href=&quot;http://HI.nextflu.org&quot;&gt;HI.nextflu.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Much previous work on this topic, &lt;a href=&quot;/papers/bedford-flux/&quot;&gt;including my own&lt;/a&gt;, has focused on &amp;quot;antigenic cartography&amp;quot; in which antigenic phenotype is embedded into a 2D antigenic map where distances between viruses are proportional to drop in titer in the hemagglutination inhibition (HI) assay. Here, we take a complementary approach where drop in titer is directly mapped to the influenza phylogeny; specific branches are assigned drops in titer. Thus, rather than embedding into 2D Euclidean space, this model assumes embedding into tree space. As a model, it works quite well, allowing prediction of unmeasured titers at high accuracy. In the manuscript, we investigate the correlation between antigenic advancement and clade success, finding that more advanced clades tend to win in the global competition among viruses. However, we observe significant noise when the new clade is at very low frequency.&lt;/p&gt;
+
+&lt;p&gt;A major feature of the cartography-based approach is providing a single pictorial view of the antigenic relationships among viruses. This is enabled by the 2D basis for cartography. The tree-based model that we present here does not permit a single viewpoint. Instead, we provide an &lt;a href=&quot;http://HI.nextflu.org&quot;&gt;interactive visualization&lt;/a&gt; of the model, in which users can click on a particular reference virus in the phylogeny and see how other viruses relate to this focal virus. We allow coloring of the phylogeny by raw HI titer, as well as by model expectations, allowing exploration of &lt;em&gt;why&lt;/em&gt; the model behaves as it does. We hope this approach will be useful in investigation of antigenic relationships among circulating influenza viruses.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 06 Oct 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/visualizing-antigenic-evolution/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/visualizing-antigenic-evolution/</guid>
+			</item>
+		
+			<item>
+				<title>Seasonal influenza circulation patterns and future projections</title>
+				<description>&lt;p&gt;&lt;a href=&quot;https://neherlab.wordpress.com/&quot;&gt;Richard Neher&lt;/a&gt; and I have compiled a &lt;a href=&quot;http://nextflu.org/reports/sep-2015/&quot;&gt;report on recent patterns of seasonal influenza virus evolution&lt;/a&gt; with projections for future clade behavior. The &lt;a href=&quot;http://nextflu.org&quot;&gt;nextflu&lt;/a&gt; site made putting this together really straightforward. Lots of interesting stuff going on. The 3c2.a clade is taking over H3N2 viruses, there&amp;#39;s a new clade of H1N1pdm viruses localized in South Asia and B viruses continue to oscillate between competing clades without permanent winners. &lt;/p&gt;
+</description>
+				<pubDate>Thu, 24 Sep 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/sep-2015-nextflu-report/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/sep-2015-nextflu-report/</guid>
+			</item>
+		
+			<item>
+				<title>Pathogen evolution, selection and immunity</title>
+				<description>&lt;p&gt;This week, &lt;a href=&quot;http://cobeylab.uchicago.edu/&quot;&gt;Sarah Cobey&lt;/a&gt; and I are co-teaching a short course on &amp;quot;Pathogen evolution, selection and immunity&amp;quot; for the 2015 &lt;a href=&quot;http://sismid.uw.edu&quot;&gt;Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)&lt;/a&gt;. This course is designed as an introduction to epidemiological modeling and evolutionary analysis for antigenically variable pathogens. Here, on the modeling side, we cover immune-mediated competition, multistrain mechanistic models and state-space reconstruction, while on the evolution side we cover the coalescent, phylogenetics and natural selection. We also discuss the immune response in terms of serology and B cell dynamics. I&amp;#39;m very excited about co-teaching this course.&lt;/p&gt;
+
+&lt;p&gt;Sarah and I have worked together to put all the course materials online. The course website is &lt;a href=&quot;/projects/sismid/&quot;&gt;here&lt;/a&gt;. We include slide decks using &lt;a href=&quot;https://github.com/hakimel/reveal.js/&quot;&gt;Reveal.js&lt;/a&gt; for individual topics like &lt;a href=&quot;/projects/sismid/competition/slides.html&quot;&gt;competition&lt;/a&gt; and the &lt;a href=&quot;/projects/sismid/coalescent/slides.html&quot;&gt;coalescent&lt;/a&gt;. We also include introductory exercises for topics like &lt;a href=&quot;/projects/sismid/phylogenetics/practical/&quot;&gt;phylogenetics using BEAST&lt;/a&gt; and &lt;a href=&quot;/projects/sismid/ssr/exercise/&quot;&gt;state-space reconstruction&lt;/a&gt;. The goal was to have something students could view alongside lectures, but also have something to refer to after the course was finished and to link out to follow-up material. Overall, I&amp;#39;m really quite pleased with this set up.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 20 Jul 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/sismid-course/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/sismid-course/</guid>
+			</item>
+		
+			<item>
+				<title>New recruits</title>
+				<description>&lt;p&gt;The lab is suddenly growing. We&amp;#39;ve had 4 new people join in the last ~2 weeks. &lt;a href=&quot;/team/allison-black/&quot;&gt;Allison Black&lt;/a&gt; is starting a UW Epidemiology PhD in the fall, &lt;a href=&quot;/team/gabe-erion/&quot;&gt;Gabe Erion&lt;/a&gt; is doing a summer rotation with the group as part of the UW MD/PhD program, &lt;a href=&quot;/team/charlton-callender/&quot;&gt;Charlton Callender&lt;/a&gt; is an undergraduate at the UW doing a summer research internship as part of the Fred Hutch SURP program and &lt;a href=&quot;/team/sidney-bell/&quot;&gt;Sidney Bell&lt;/a&gt; is starting a 1 year UW Epidemiology Master&amp;#39;s adjunct to the MCB PhD program. This should be a fun summer with lots of projects to hack on together. I&amp;#39;m very much looking forward to it.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 30 Jun 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/new-recruits/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/new-recruits/</guid>
+			</item>
+		
+			<item>
+				<title>On scientific publishing practices in the face of public health crises</title>
+				<description>&lt;p&gt;After 400 years and the rise of the internet, the manuscript remains sacrosanct to scientific discourse. The system of scientific journals and peer review prioritizes findings to be &lt;em&gt;right&lt;/em&gt; rather than &lt;em&gt;timely&lt;/em&gt;, which is usually not such a bad thing, but in the case of infectious disease outbreaks, science comes to be at odds with public health efforts. In the recent case of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Ebola_virus_epidemic_in_West_Africa&quot;&gt;2014-2015 West African Ebola epidemic&lt;/a&gt;, there was an incredibly well-done publication early on by &lt;a href=&quot;http://sabetilab.org/&quot;&gt;Pardis Sabeti&lt;/a&gt; and colleagues in September 2014 that &lt;a href=&quot;http://dx.doi.org/10.1126/science.1259657&quot;&gt;analyzed Ebola genomes sequences from Sierra Leone through June 2014&lt;/a&gt;. Sequences from this paper were made available on Genbank in June. However, following this, little additional genomic data appeared, in large part due to difficulties in shipping samples out of West Africa. Because of the lack of data, during the height of the epidemic in fall 2014, we had no idea what was going in terms of the ongoing evolution of the virus.&lt;/p&gt;
+
+&lt;p&gt;Instead, we are just now learning the details of the evolution and spread of the virus during the course of the epidemic. In the last month, we saw papers published by &lt;a href=&quot;http://dx.doi.org/10.1038/nature14490&quot;&gt;Tong et al.&lt;/a&gt; detailing 175 new Ebola genomes mostly from Western Sierra Leone, &lt;a href=&quot;http://dx.doi.org/10.1038/nature14594&quot;&gt;Carroll et al.&lt;/a&gt; detailing 179 new genomes mostly from Guinea and &lt;a href=&quot;http://dx.doi.org/10.1016/j.cell.2015.06.007&quot;&gt;Park et al.&lt;/a&gt; detailing 232 new genomes mostly from Eastern Sierra Leone. As discussed &lt;a href=&quot;/blog/ebola-transmission-dynamics/&quot;&gt;previously&lt;/a&gt;, I was involved in the evolutionary analyses in the Park et al. paper looking at purifying vs positive selection on the Ebola genome.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s unfortunate that it&amp;#39;s taken so long for these results to see the full light of day. At a minimum, genome sequences should be released to the community as soon as they&amp;#39;re in a cleanly sharable state. In these sorts of analyses, the genome sequence itself isn&amp;#39;t so useful or relevant, it&amp;#39;s the differences between sequences that gives insight into evolution and transmission. We need to pool data to really understand what&amp;#39;s going on. In this case, the Tong et al. paper was first received by Nature on Jan 30, but sequences didn&amp;#39;t appear in Genbank nearly until publication on May 13. The Carroll et al. paper was first received on April 9 and sequences were &lt;a href=&quot;http://evident-project.eu/newsevents/ebov-sequences/&quot;&gt;released publicly&lt;/a&gt; on May 11 prior to publication on June 17. This is a nice step forward. Most of the sequences from Park et al. were released as they came off the sequencing machine in &lt;a href=&quot;http://virological.org/t/early-release-16-new-ebov-genomes-from-sierra-leone/72&quot;&gt;December&lt;/a&gt;, &lt;a href=&quot;http://virological.org/t/mid-early-release-96-ebov-genomes-from-sierra-leone/96&quot;&gt;January&lt;/a&gt; and &lt;a href=&quot;http://virological.org/t/mid-early-release-152-ebov-genomes-from-sierra-leone/110&quot;&gt;March&lt;/a&gt; prior to publication on June 18. Additionally, 85 genomes from Guinea were &lt;a href=&quot;http://www.pasteur.fr/en/ebov-sequences-guinea&quot;&gt;released in pre-publication form&lt;/a&gt; by the Institute Pasteur on May 26.&lt;/p&gt;
+
+&lt;p&gt;I see early data release as an important step forward for the community. Tying data release to publication seems like an obviously poor idea when there are public health implications (for more discussion see &lt;a href=&quot;http://www.nature.com/news/data-sharing-make-outbreak-research-open-access-1.16966&quot;&gt;Yozwiak et al.&lt;/a&gt;). However, on Friday, I was quoted by the NYT as saying: &lt;a href=&quot;http://www.nytimes.com/2015/06/20/world/africa/genome-studies-show-how-ebola-spread-initially.html&quot;&gt;&amp;quot;you could imagine a situation where you don’t really have to publish your Nature paper; instead, you make a blog post&amp;quot;&lt;/a&gt;. Here, I&amp;#39;m picturing something more than data sharing. Posting sequences is great. But it still means that insights are locked away prior to publication. We need to move away from the idea of a definitive published manuscript as being the only worthwhile target for scientific outputs. &lt;a href=&quot;http://tree.bio.ed.ac.uk/&quot;&gt;Andrew Rambaut&lt;/a&gt; has set up the public forum &lt;a href=&quot;http://virological.org/&quot;&gt;virological.org&lt;/a&gt; that is now being used to post both data and analyses of ongoing &lt;a href=&quot;http://virological.org/t/direct-deep-sequencing-in-sierra-leone-yields-73-new-ebov-genomes-from-february-may-2015/134&quot;&gt;Ebola&lt;/a&gt; and &lt;a href=&quot;http://virological.org/t/preliminary-analysis-of-middle-east-respiratory-syndrome-coronavirus-mers-cov-sequences-from-korea-and-china/143&quot;&gt;MERS-CoV&lt;/a&gt; evolution in near real-time by &lt;a href=&quot;https://www.sanger.ac.uk/research/faculty/pkellam/&quot;&gt;Paul Kellam&lt;/a&gt; and colleagues. Data and analyses can be shared publicly online before publication. The paper can come later and represent the definitive analysis. I recognize that papers still need to be produced to fill out CVs and to cement the scientific literature, but a lot can be done before the paper appears. Preprints only get us part of the way there (although &lt;a href=&quot;http://haldanessieve.org/&quot;&gt;Haldane&amp;#39;s Sieve&lt;/a&gt; is a fantastic idea). They usually appear alongside initial manuscript submission in fairly polished form. We need lighter weight discourse as well.&lt;/p&gt;
+
+&lt;p&gt;Previously, I blogged about the need for a &lt;a href=&quot;/blog/github-of-science/&quot;&gt;&amp;quot;GitHub of Science&amp;quot;&lt;/a&gt;. I now believe that plain old GitHub is the &amp;quot;GitHub of Science&amp;quot;. Scripts and pipelines can be posted to GitHub; results and analyses can be discussed on public forums (like &lt;a href=&quot;http://virological.org/&quot;&gt;virological.org&lt;/a&gt;); figures posted to &lt;a href=&quot;http://figshare.com/&quot;&gt;figshare&lt;/a&gt;; papers can be reviewed after publication via blog. There&amp;#39;s no technological limitation to making this work. We have all the tools we need at our disposal. Let&amp;#39;s commit to doing a better job of this. In some cases, actual lives are at stake.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 22 Jun 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/scientific-publishing-practices/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/scientific-publishing-practices/</guid>
+			</item>
+		
+			<item>
+				<title>Ebola transmission and evolution revealed through genomic analysis</title>
+				<description>&lt;p&gt;In collaboration with a large consortium from Harvard, the Broad Institute, the University of Edinburgh, Tulane University, the CDC, Kenema Government Hospital and others, we&amp;#39;ve just published a paper in &lt;a href=&quot;http://dx.doi.org/10.1016/j.cell.2015.06.007&quot;&gt;Cell&lt;/a&gt; detailing the &lt;a href=&quot;/papers/park-ebola-transmission/&quot;&gt;transmission dynamics of Ebola virus circulating in Sierra Leone between May and December last year&lt;/a&gt;. Here, we present 232 new Ebola genome sequences and combine these sequences with 86 previously characterized genomes to give a broad picture of the evolution of the virus during the Sierra Leone epidemic. We find evidence for a sustained epidemic within Sierra Leone driven by endemic transmission rather than by repeated introductions from Guinea or Liberia. We also investigate evidence for evolutionary adaptation to the human host, finding that genome-wide selection is largely purifying, aiming to maintain the Ebola genome in a fixed state rather than selecting for new mutations. However, we do see some signal in the glycoprotein gene for faster rates of evolution in regions that are putative antibody epitopes. We attribute this signal to within-host selection for immune escape during the course of an infection.&lt;/p&gt;
+
+&lt;p&gt;This was a fantastic collaboration to be a part of. Being able to make timely contributions to our understanding of the evolution and epidemiology of an outbreak will have important implications for intervention strategies. Going forward, immediate public release of outbreak sequence data will be needed to make actionable inferences. In the case of an outbreak, each sample is only truly valuable when put in context with samples gathered in other regions or other points in time. Because of this, data sharing is crucial to make proper conclusions.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 18 Jun 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/ebola-transmission-dynamics/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/ebola-transmission-dynamics/</guid>
+			</item>
+		
+			<item>
+				<title>Tracking down the sneeze that started seasonal flu</title>
+				<description>&lt;p&gt;I had the good fortune of working with &lt;a href=&quot;https://twitter.com/flichtman&quot;&gt;Flora Lichtman&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/SharonShattuck1&quot;&gt;Sharon Shattuck&lt;/a&gt; at &lt;a href=&quot;http://www.sweetfernproductions.com/&quot;&gt;Sweet Fern Productions&lt;/a&gt; on a short science outreach video on the &lt;a href=&quot;/blog/seasonal-influenza-circulation/&quot;&gt;different global circulation patterns of influenza A and B viruses&lt;/a&gt;. Sharon and Flora did the video as a sort of 50s educational short, which I think works beautifully. Many of the animations in the video are doctored screen grabs of my &lt;a href=&quot;/projects/coaltrace/&quot;&gt;coaltrace&lt;/a&gt; and &lt;a href=&quot;/projects/flutrace/&quot;&gt;flutrace&lt;/a&gt; animations. I also thought the pipe cleaners were pretty genius.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-md-8&quot;&gt;
+        &lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+            &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;http://www.youtube.com/embed/fKRLHtO4PSE&quot;&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</description>
+				<pubDate>Mon, 08 Jun 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/video-on-influenza-circulation/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/video-on-influenza-circulation/</guid>
+			</item>
+		
+			<item>
+				<title>Global circulation patterns of seasonal influenza viruses</title>
+				<description>&lt;p&gt;We&amp;#39;ve just had a paper published in &lt;a href=&quot;http://dx.doi.org/10.1038/nature14460&quot;&gt;Nature&lt;/a&gt; investigating the &lt;a href=&quot;/papers/bedford-global-circulation/&quot;&gt;global circulation patterns of seasonal influenza viruses&lt;/a&gt;. This work represents a collaborative effort between myself, &lt;a href=&quot;http://www.vet.cam.ac.uk/directory/russell&quot;&gt;Colin Russell&lt;/a&gt; at Cambridge University, analysis partners &lt;a href=&quot;https://rega.kuleuven.be/cev/ecv/lab-members/PhilippeLemey.html&quot;&gt;Philipe Lemey&lt;/a&gt; and &lt;a href=&quot;http://www.imperial.ac.uk/people/s.riley&quot;&gt;Steven Riley&lt;/a&gt; and data collaborators from all five &lt;a href=&quot;http://www.who.int/influenza/gisrs_laboratory/collaborating_centres/list/en/&quot;&gt;WHO Influenza Collaborating Centers&lt;/a&gt;. Here, we analyze the most comprehensive dataset of seasonal influenza viruses compiled to date, representing ~9600 viruses from all four circulating influenza lineages sampled between 2000 and 2012. Circulation patterns of influenza A/H3N2 have been well characterized (see for example &lt;a href=&quot;http://www.sciencemag.org/content/320/5874/340.short&quot;&gt;Russell et al. 2008&lt;/a&gt;, &lt;a href=&quot;/papers/bedford-global-migration/&quot;&gt;Bedford et al. 2010&lt;/a&gt; and &lt;a href=&quot;/papers/lemey-air-travel/&quot;&gt;Lemey et al. 2014&lt;/a&gt;), showing little regional persistence and a powerful source-sink dynamic in which viruses emerge from the East and Southeast Asian tropics and spread to the rest of the world, rapidly replacing endemic lineages. In this new paper, we apply &lt;a href=&quot;http://en.wikipedia.org/wiki/Phylogeography&quot;&gt;phylogeographic&lt;/a&gt; methods to show that the other three lineages of seasonal influenza, A/H1N1, B/Victoria and B/Yamagata, are traversing the world in quite a different fashion from H3N2.&lt;/p&gt;
+
+&lt;p&gt;We find that influenza B viruses in particular often remain endemic within a geographic region without spreading to other parts of the world. India and China still represent source populations from which influenza B viruses throughout the world descend, but this process occurs much more slowly in influenza B. Because geographic mixing is slower in influenza B than influenza H3N2, we observe  distinct genetic lineages of influenza B associated with different geographic regions. We quantify this difference by measuring the regional persistence of different viruses, finding that H3N2 viruses persist within a region an average of 6 months, while B viruses persist an average of 12 or 13 months. Influenza H1N1 shows up in between H3N2 and B, with an average regional persistence of 9 months.&lt;/p&gt;
+
+&lt;p&gt;We review literature showing that influenza B viruses evolve antigenically more slowly than influenza A viruses, particularly H3N2, resulting in a greater proportion of childhood infections in B viruses. We find that ~60% of B infections are in children, while only ~30% of H3N2 infection are in children. We reason that much of the difference in rates of geographic spread between A and B viruses could be due to different travel patterns in children and adults. To test this hypothesis, we built a large-scale individual-based epidemiological model that includes age structure, antigenic evolution and geographic mixing. We show that in this model, including realistic differences in child vs adult travel patterns results in a very similar impact on geographic movement as observed in the empirical influenza A and B viral sequence data. Thus, we observe a quite interesting interaction between virus evolution, epidemiology and human behavior patterns that drives large-scale differences in virus geographic spread.&lt;/p&gt;
+
+&lt;p&gt;Working on this, it was great to be able to build so much on previous analytical code and results. Analysis code for geographically-annotated phylogenies was largely expanded on from the &lt;a href=&quot;/projects/PACT/&quot;&gt;PACT&lt;/a&gt; tree traversal scripts originally developed for &lt;a href=&quot;/papers/bedford-global-migration/&quot;&gt;Bedford et al. 2010&lt;/a&gt;, while simulation code was expanded on from the individual-based &lt;a href=&quot;/projects/antigen/&quot;&gt;Antigen&lt;/a&gt; model originally implemented for &lt;a href=&quot;/papers/bedford-canalization/&quot;&gt;Bedford et al. 2012&lt;/a&gt;. Results on quantifying differences in antigenic drift rates between seasonal viruses from &lt;a href=&quot;/papers/bedford-flux/&quot;&gt;Bedford et al. 2014&lt;/a&gt; were also incredibly helpful.&lt;/p&gt;
+
+&lt;p&gt;All analysis code and results (with over 50 figures!) are freely available in the &lt;a href=&quot;http://github.com/blab/global-migration&quot;&gt;GitHub repository associated with the paper&lt;/a&gt;. I&amp;#39;ve done my best to include &lt;a href=&quot;http://github.com/ruby/rake&quot;&gt;Rake&lt;/a&gt; build files wherever possible to make this research as reproducible as possible. This repository contains code to subsample data, set up phylogenetic and phylogeographic &lt;a href=&quot;http://beast.bio.ed.ac.uk/&quot;&gt;BEAST&lt;/a&gt; XML files, conduct &lt;a href=&quot;/projects/PACT/&quot;&gt;PACT&lt;/a&gt; analyses of BEAST output and set up &lt;a href=&quot;/projects/antigen/&quot;&gt;Antigen&lt;/a&gt; simulations.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 08 Jun 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/seasonal-influenza-circulation/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/seasonal-influenza-circulation/</guid>
+			</item>
+		
+			<item>
+				<title>Real-time analysis of Ebola evolution and geographic spread</title>
+				<description>&lt;p&gt;In further collaboration with &lt;a href=&quot;https://neherlab.wordpress.com/&quot;&gt;Richard Neher&lt;/a&gt;, we&amp;#39;ve released a web-based tool that tracks the ongoing evolution and geographic spread of Ebola virus in West Africa. The tool is available at &lt;a href=&quot;http://ebola.nextflu.org&quot;&gt;ebola.nextflu.org&lt;/a&gt; and shows a phylogenetic tree of publicly available EBOV sequences along with a map of Guinea, Sierra Leone and Liberia. Mousing over prefectures/districts/counties highlights viruses collected from those regions and vice versa. This makes some geographic connections obvious, like the general East to West movement within Sierra Leone between summer and fall in 2014, and that the current outbreak in Guinea stems from two very distinct genetic sources. It&amp;#39;s also possible to scrub through time to see when viral samples appear and to zoom into particular phylogenetic clades by clicking on branches in the tree. Samples can also colored by date of sampling and can be subsetted to particular regions or to particular data sources.&lt;/p&gt;
+
+&lt;p&gt;Sequence data for Ebola has been a valuable and scarce resource. Here, &lt;a href=&quot;http://tree.bio.ed.ac.uk/&quot;&gt;Andrew Rambaut&lt;/a&gt; has graciously contributed a curated dataset containing 808 viral genomes, collected from publicly available sources, including the &lt;a href=&quot;http://evident-project.eu/newsevents/ebov-sequences/&quot;&gt;European Mobile Lab&lt;/a&gt;, the &lt;a href=&quot;http://vhfc.org/&quot;&gt;Viral Hemorrhagic Fever Consortium&lt;/a&gt;, the &lt;a href=&quot;http://dx.doi.org/10.1038/nature14490&quot;&gt;China CDC&lt;/a&gt;, &lt;a href=&quot;http://dx.doi.org/10.3201/eid2107.150522&quot;&gt;USAMRIID&lt;/a&gt; and the US CDC. However, especially relevant, is the amazing work by &lt;a href=&quot;http://nickloman.github.io/&quot;&gt;Nick Loman&lt;/a&gt;, &lt;a href=&quot;https://www.sanger.ac.uk/research/faculty/pkellam/&quot;&gt;Paul Kellam&lt;/a&gt; and &lt;a href=&quot;http://www.calicivirus.path.cam.ac.uk/&quot;&gt;Ian Goodfellow&lt;/a&gt; providing sequences from April and May 2015 in Guinea and Sierra Leone. We&amp;#39;re hopeful that with such timely data and tools to analyze this data and put it into context, we can understand better the current patterns of Ebola transmission and geographic spread, which could aid in surveillance and control efforts. With help from Andrew, Nick, Paul and Ian, we&amp;#39;re hoping to keep this updated as new sequences come in.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 05 Jun 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/realtime-ebola-analysis/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/realtime-ebola-analysis/</guid>
+			</item>
+		
+			<item>
+				<title>Postdoc in immune repertoire dynamics</title>
+				<description>&lt;p&gt;I&amp;#39;m looking for a postdoc to work on computational immunology.  The advertisement follows:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A new postdoctoral position is available in the groups of &lt;a href=&quot;http://bedford.io/&quot;&gt;Trevor Bedford&lt;/a&gt; and &lt;a href=&quot;http://matsen.fredhutch.org/&quot;&gt;Erick Matsen&lt;/a&gt; at the Fred Hutchinson Cancer Research Center located in Seattle, WA. This position will focus on analyzing immune repertoire sequence data from an evolutionary perspective. &lt;/p&gt;
+
+&lt;p&gt;Deep sequencing of B cell repertoires has opened up the possibility of understanding the immune response at a molecular level. This project will analyze repertoire data to compare processes of clonal expansion and affinity maturation in primary and secondary immune responses. These studies will allow, for the first time, a detailed mechanistic understanding of original antigenic sin in viral infection; results from these studies may allow construction of vaccines that better deal with a diversity of pathogen exposures. This work represents a collaboration with experimental colleagues at the Fred Hutch, Emory University and Adaptive Biotechnologies. There will be no want of fresh data.&lt;/p&gt;
+
+&lt;p&gt;The ideal candidate will have experience with working with sequence data and a strong interest in model-based statistical analysis of real data sets. Data sets will comprise millions of B cell repertoire sequences and so strong coding abilities are essential. Candidates should have experience in at least one programming language and a proven track-record of peer reviewed publications. Candidates with PhDs from diverse backgrounds are encouraged to apply, including biology, mathematics, statistics, physics and computer science. However, experience in phylogenetics or immunological bioinformatics is especially opportune. The Fred Hutch is an equal opportunity employer, committed to workforce diversity. Women and minorities are particularly encouraged to apply.&lt;/p&gt;
+
+&lt;p&gt;The position is available immediately with flexible starting dates for a 2-year appointment with possibility of extension.  Informal inquires are welcome.  Applications will be accepted until the position is filled.  The Fred Hutchinson Cancer Research Center offers competitive salaries commensurate with experience and skills, complete with benefits.&lt;/p&gt;
+
+&lt;p&gt;To apply please send (1) cover letter that includes the names and contacts for three references and a short statement of research interests, (2) a current CV and (3) code samples or links to published/distributed code to trevor&lt;span style=&quot;display:none&quot;&gt;obfuscate&lt;/span&gt;@bedford.io.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+				<pubDate>Thu, 14 May 2015 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/postdoc-repertoire-dynamics/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/postdoc-repertoire-dynamics/</guid>
+			</item>
+		
+			<item>
+				<title>Observations of recent influenza evolution and predictions for the 2015-2016 flu season</title>
+				<description>&lt;p&gt;Influenza is a seasonal virus and each winter, during the flu season, approximately 10% of the people in the USA will become infected and approximately 30,000 people will succumb to infection or associated complications. Our best public health response to these yearly epidemics is vaccination. However, influenza evolves rapidly and the strain used in the vaccine must be constantly updated to maintain vaccine efficacy. &lt;/p&gt;
+
+&lt;p&gt;One particular lineage of virus, influenza H3N2 &lt;a href=&quot;/papers/bedford-flux/&quot;&gt;evolves significantly faster than other lineages&lt;/a&gt;, and partly because of this, is usually responsible for the majority of seasonal morbidity and mortality. Thus, we need to constantly monitor H3N2 evolution and try to predict ahead of time which strains will take off when choosing a vaccine strain. The World Health Organization (WHO) just met last week and &lt;a href=&quot;http://www.who.int/influenza/vaccines/virus/recommendations/2015_16_north/en/&quot;&gt;chose to use the strain Switzerland/9715293/2013&lt;/a&gt; as the H3N2 component (along with H1N1 and B components) in the coming 2015-2016 Northern Hemisphere flu season. A strain needs to be chosen in February to allow enough time for vaccine manufacture, and thus vaccine strain selection amounts to predicting evolution of the virus ~10 months in advance.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://neherlab.wordpress.com/&quot;&gt;Richard Neher&lt;/a&gt; and I have been developing &lt;a href=&quot;http://nextflu.org&quot;&gt;nextflu.org&lt;/a&gt; to analyze currently circulating strains of influenza A/H3N2. I thought I&amp;#39;d discuss a bit here our recent observations and how they mesh with vaccine strain selection for the coming season.&lt;/p&gt;
+
+&lt;p&gt;First off, we had a very bad H3N2 flu season this last winter, which was the result of an unusual situation in which the &lt;a href=&quot;http://en.wikipedia.org/wiki/Hemagglutinin&quot;&gt;hemagglutinin&lt;/a&gt; (HA) gene of two different virus strains or clades each independently mutated to a novel antigenic form. This new antigenic form allowed the mutant viruses to reinfect people who had been previously infected by an earlier strain, resulting in the rapid spread of these mutant strains. The ancestral state was phenylalanine (F) at HA site 159 and asparagine (N) at HA site 225. Both these lineages first mutated at site 225 from asparagine (N) to aspartic acid (D), and then rapidly mutated at site 159 from phenylalanine (F) to serine (S) in one lineage and from phenylalanine (F) to tyrosine (Y) in the other lineage. These replacements can be readily seen in the evolutionary tree of recent viruses:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/nextflu_clades.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Above, circles are viruses isolated with the last year and branches are determined by HA sequence. The lineage created by 225D/159S is referred to by the WHO as clade 3C.3a (above in blue) and the lineage created by 225D/159Y is referred to by the WHO as clade 3C.2a (above in yellow). The Switzerland/2013 vaccine strain belongs to clade 3C.3a and is marked with a cross in the above figure. Corresponding to their convergent genetic mutations, these clades appear to be antigenically similar, meaning infection by one will likely provide protection to the other. The &lt;a href=&quot;http://www.who.int/influenza/vaccines/virus/recommendations/201502_recommendation.pdf&quot;&gt;WHO report&lt;/a&gt; states &amp;quot;Most viruses were well inhibited by ferret antisera raised against cell-propagated A/Switzerland/9715293/2013 (3C.3a) virus and representative 3C.2a viruses, indicating that 3C.2a and 3C.3a viruses were antigenically related&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;These two mutations both occurred proximal to the receptor binding site on the HA protein:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/nextflu_structure.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Thanks to &lt;a href=&quot;http://tree.bio.ed.ac.uk/people.html?id=gdudas&quot;&gt;Gytis Dudas&lt;/a&gt; for help with drawing the 3D structure.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, the receptor binding site is shown in purple, site 159 in red and site 225 in orange. Mutations at site 159 have been been &lt;a href=&quot;http://www.sciencemag.org/content/342/6161/976.abs&quot;&gt;previously demonstrated&lt;/a&gt; to have important antigenic consequences. Owing to the observed parallel evolutionary trajectories, it seems likely that in this case, mutation a site 225 potentiated subsequent mutation at site 159.&lt;/p&gt;
+
+&lt;p&gt;Both 3C.3a and 3C.2a have rapidly expanded and thus, the question at the moment is whether 3C.3a or 3C.2a will dominate in the coming winter season. However, there are indicators that 3C.2a is likely to be the more successful lineage. Viruses with mutations at epitope sites (sites on the protein that are exposed and hence likely subject to antibody binding) &lt;a href=&quot;http://www.nature.com/nature/journal/v507/n7490/abs/nature13087.html&quot;&gt;generally outcompete viruses with mutations at non-epitope sites&lt;/a&gt;. Clade 3C.2a viruses have ~2 more epitope mutations and ~1 fewer non-epitope mutation than 3C.3a viruses, suggesting that 3C.2a is the fitter lineage. Additionally, and more directly, 3C.2a has in the last ~4 months overtaken 3C.3a to become the globally dominate strain:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/nextflu_frequencies.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;The rapid growth of both of these clades is immediately visible in the phylogeny as clustering of viruses close together on the tree and rapid clade expansion. Here it&amp;#39;s obvious that ancestral 3C.3 viruses are growing slower than 3C.3a and 3C.3b viruses:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/nextflu_branching.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This difference in branching rate is quantified by the &lt;a href=&quot;https://neherlab.wordpress.com/2014/11/11/now-out-in-elife-predicting-evolution/&quot;&gt;local branching index&lt;/a&gt;, which Richard Neher and colleagues showed to be &lt;a href=&quot;http://elifesciences.org/content/3/e03568&quot;&gt;predictive of future clade success&lt;/a&gt;. Clade 3C.2a shows a higher local branching index.&lt;/p&gt;
+
+&lt;p&gt;Taken together, these results suggest that clade 3C.2a is the fitter viral clade and thus we expect most infections in the 2015-2016 flu season to derive from 3C.2a viruses. However, this is a rather broad statement and we&amp;#39;re working now to quantify our predictions of clade frequencies in the future virus population.&lt;/p&gt;
+
+&lt;p&gt;Critically, the WHO chose to use a 3C.3a virus in the 2015-2016 vaccine. However, from serological analysis they believe that 3C.3a and 3C.2a viruses have a high degree of cross-immunity. In this case, we expect vaccination with a 3C.3a virus to elicit strong immunity against 3C.2a infection. Still, as more data comes in we can expect to see antigenic relatedness between clades to be more fully defined.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 05 Mar 2015 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/strain-selection/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/strain-selection/</guid>
+			</item>
+		
+			<item>
+				<title>Real-time tracking of influenza virus evolution</title>
+				<description>&lt;p&gt;Together with &lt;a href=&quot;https://neherlab.wordpress.com/&quot;&gt;Richard Neher&lt;/a&gt;, we&amp;#39;ve just released a website, called &lt;a href=&quot;http://nextflu.org&quot;&gt;nextflu&lt;/a&gt;, that is meant as a real-time view into the evolution of seasonal human influenza, focusing on influenza subtype &lt;a href=&quot;http://en.wikipedia.org/wiki/Influenza_A_virus_subtype_H3N2&quot;&gt;H3N2&lt;/a&gt;. Influenza H3N2 is the fastest evolving of circulating influenza viruses and is responsible for the bulk of human mortality and morbidity. Because of its rate of evolution, it is also the most difficult subtype to match during vaccine strain selection. We built nextflu to try to make sense of ongoing H3N2 evolution and to provide a tool to better pick vaccine strains.&lt;/p&gt;
+
+&lt;p&gt;For the site, data is downloaded from &lt;a href=&quot;http://gisaid.org&quot;&gt;GISAID&lt;/a&gt; and a &lt;a href=&quot;https://github.com/blab/nextflu/tree/master/augur&quot;&gt;pipeline&lt;/a&gt; for cleaning and processing sequences is run. The resulting files are then rendered in the browser using &lt;a href=&quot;http://d3js.org/&quot;&gt;d3.js&lt;/a&gt;. Primary outputs of this analysis are an annotated phylogeny showing relatedness between circulating influenza isolates and estimated mutation frequency trajectories through time. A large degree of interactivity is provided, allowing coloring of the tree by trait or genotype and rewinding time to see what isolates were circulating in previous seasons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/nextflu_tree.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m really excited about this work, and I can imagine this sort of real-time tracking and automated analysis being useful for a variety of viruses, such as H5N1, norovirus or Ebola. A major goal at this point (or at least something to strive for) is build in automated forecasting of which strains are likely to succeed based on historical patterns. At this point, we are showing predictors that have previously been found to correlate with strain success, such as &lt;a href=&quot;http://www.nature.com/nature/journal/v507/n7490/abs/nature13087.html&quot;&gt;number of epitope mutations&lt;/a&gt; and &lt;a href=&quot;http://elifesciences.org/content/3/e03568&quot;&gt;local branching patterns&lt;/a&gt;, but the goal is definitely quantitative forecasts of strain frequencies through time.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#39;ve strove to be as open as possible with this work. All &lt;a href=&quot;https://github.com/blab/nextflu&quot;&gt;source code&lt;/a&gt; is freely available. If you have specific suggestions for improving nextflu, please, &lt;a href=&quot;https://github.com/blab/nextflu/issues&quot;&gt;open an issue&lt;/a&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 24 Feb 2015 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/nextflu/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/nextflu/</guid>
+			</item>
+		
+			<item>
+				<title>Seasonal migration of influenza lineages</title>
+				<description>&lt;p&gt;We&amp;#39;ve just had a paper published in &lt;a href=&quot;http://www.biomedcentral.com/1471-2148/14/272/&quot;&gt;BMC Evolutionary Biology&lt;/a&gt; on &lt;a href=&quot;/papers/zinder-seasonal-migration/&quot;&gt;seasonal migration patterns in influenza H3N2&lt;/a&gt;. This work was lead by &lt;a href=&quot;http://scholar.google.com/citations?user=E1HTHfwAAAAJ&amp;amp;hl=en&quot;&gt;Daniel Zinder&lt;/a&gt; at the University of Michigan. Daniel developed a novel approach to estimate character state transitions on a phylogeny where the rate of transition is not constant in time, but instead follows some periodic function. Here, we use this method to analyze migration patterns in influenza H3N2, investigating whether transitions from one region of the world to another occur in a periodic fashion. We find strong support for seasonal migration, where influenza lineages frequently move into North America in the fall at the start of the influenza season, but more rarely arrive in the spring towards the end of the season. In general, we find support for a &amp;quot;fertile ground&amp;quot; hypothesis in which regions with a conducive epidemic environment successfully incubate immigrating influenza lineages.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 30 Dec 2014 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/flu-seasonal-migration/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/flu-seasonal-migration/</guid>
+			</item>
+		
+			<item>
+				<title>Is Ebola adapting?</title>
+				<description>&lt;p&gt;&lt;a href=&quot;http://www.ias.edu/people/cos/users/11847&quot;&gt;Marta &amp;#321;uksza&lt;/a&gt;, &lt;a href=&quot;http://www.thp.uni-koeln.de/%7Elassig/michael_laessig.html&quot;&gt;Michael L&amp;auml;ssig&lt;/a&gt; and I have done &lt;a href=&quot;/papers/luksza-ebola-evolution/&quot;&gt;an analysis of Ebola virus evolution&lt;/a&gt; using the recently published &lt;a href=&quot;http://www.sciencemag.org/content/345/6202/1369.abstract&quot;&gt;Gire et al. dataset&lt;/a&gt; of 78 full genomes.  We&amp;#39;ve put the manuscript up on the &lt;a href=&quot;http://arxiv.org/abs/1411.1722&quot;&gt;arXiv&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Gire et al. paper examines Ebola sequences from Sierra Leone during May and June identifying 55 new mutations that have occurred during the West African outbreak.  Most of these mutations are shared by just one or a small handful of cases, but there is a particular mutation at genomic site 10218 that first appears at the beginning of June that distinguishes two major clades of virus (shown in blue and red below).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/ebola_evolution_clades.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Previous &lt;a href=&quot;http://en.wikipedia.org/wiki/Viral_phylodynamics&quot;&gt;phylodynamic&lt;/a&gt; studies have developed general methodologies to estimate epidemic growth rates from sequence data.  Here, we developed a novel approach to look for differences in epidemic growth rate across genetic clades.  We use this method to compare growth rates in clade 2 and clade 3 viruses, finding a significantly higher growth rate in clade 3 viruses.  This suggests that clade 3 viruses spread more rapidly than clade 2 viruses during the May/June study period.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/ebola_evolution_growth.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This result could be explained in two fashions, either the mutation at site 10218 has functional and evolutionary consequences that aid the spread of the virus or this mutation represents a neutral marker and the difference in growth rates is entirely due to epidemiological circumstance.  In the former case, we expect natural selection to favor a virus that transmits more readily or a virus that has a longer duration of infection, perhaps due to attenuation (a common occurence in the process of host adaptation).  In the latter case, we might expect that clade 3 viruses happened to arise in a more favorable local environment or underwent a &lt;a href=&quot;http://en.wikipedia.org/wiki/Super-spreader&quot;&gt;superspreading&lt;/a&gt; event that rapidly boosted the number of infections.  Either of these scenarios demands more detailed follow-up.&lt;/p&gt;
+
+&lt;p&gt;However, we would predict that if the mutation at site 10218 has adaptive significance then the observed difference in growth rate will be sustained, while if it is epidemiologically driven, then the observed difference will be transient.  The mutation at site 10218 is now an event that occurred 5 months ago; either clade 3 has continued to take over or it has not.  Sequence data from more recent infections would immediately tell us which scenario took place.&lt;/p&gt;
+
+&lt;p&gt;In general, I would hope that this methodology could be used to search for novel adaptive variants in near real-time as sequence data is released.&lt;/p&gt;
+</description>
+				<pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/ebola-evolution/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/ebola-evolution/</guid>
+			</item>
+		
+			<item>
+				<title>Bayesian estimation of phylogenetic signal</title>
+				<description>&lt;p&gt;We&amp;#39;ve just had a paper published in &lt;a href=&quot;http://onlinelibrary.wiley.com/doi/10.1111/2041-210X.12293/abstract&quot;&gt;Methods in Ecology and Evolution&lt;/a&gt; on &lt;a href=&quot;/papers/vrancken-phylogenetic-signal/&quot;&gt;&amp;quot;Simultaneously estimating evolutionary history and repeated traits phylogenetic signal&amp;quot;&lt;/a&gt;.  This work, lead by &lt;a href=&quot;https://rega.kuleuven.be/cev/ecv/lab-members/BramVrancken.html&quot;&gt;Bram Vrancken&lt;/a&gt;, &lt;a href=&quot;https://rega.kuleuven.be/cev/ecv/lab-members/PhilippeLemey.html&quot;&gt;Philippe Lemey&lt;/a&gt; and &lt;a href=&quot;http://faculty.biomath.ucla.edu/msuchard/&quot;&gt;Marc Suchard&lt;/a&gt;, estimates &lt;em&gt;phylogenetic signal&lt;/em&gt; in a fully Bayesian fashion, integrating over uncertainty in evolutionary history.  This method provides an estimate of the extent to which variance of a continuous trait (like viral load) can be explained by evolutionary relatedness and thus gives an estimate of the trait&amp;#39;s &lt;a href=&quot;http://en.wikipedia.org/wiki/Heritability&quot;&gt;heritability&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of particular interest to me, is that this method gives a heritability estimate of &lt;a href=&quot;/blog/influenza-antigenic-dynamics/&quot;&gt;influenza antigenic phenotype&lt;/a&gt; of ~0.73, which it quite high and supports a strong genetic basis to antigenic phenotype.  Here, total variance in a phenotype trait stems from a combination of variance due to genotype and variance due to the environment &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;V_P = V_G + V_E&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:0.83333em;vertical-align:-0.15em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base textstyle uncramped&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.22222em;&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:0.15em;margin-right:0.05em;margin-left:-0.22222em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.13889em;&quot;&gt;P&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.22222em;&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:0.15em;margin-right:0.05em;margin-left:-0.22222em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;G&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mbin&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.22222em;&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:0.15em;margin-right:0.05em;margin-left:-0.22222em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;, so that heritability is measured as the proportion of the total variance explained by genotype &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;H&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi&gt;G&lt;/mi&gt;&lt;/msub&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;/&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;V&lt;/mi&gt;&lt;mi&gt;P&lt;/mi&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;H&lt;sup&gt;2&lt;/sup&gt; = V_G / V_P&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8141079999999999em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;strut bottom&quot; style=&quot;height:1.064108em;vertical-align:-0.25em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base textstyle uncramped&quot;&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.08125em;&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:-0.363em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle uncramped&quot;&gt;&lt;span class=&quot;mord mathrm&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.22222em;&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:0.15em;margin-right:0.05em;margin-left:-0.22222em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathit&quot;&gt;G&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathrm&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.22222em;&quot;&gt;V&lt;/span&gt;&lt;span class=&quot;vlist&quot;&gt;&lt;span style=&quot;top:0.15em;margin-right:0.05em;margin-left:-0.22222em;&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;reset-textstyle scriptstyle cramped&quot;&gt;&lt;span class=&quot;mord mathit&quot; style=&quot;margin-right:0.13889em;&quot;&gt;P&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;baseline-fix&quot;&gt;&lt;span class=&quot;fontsize-ensurer reset-size5 size5&quot;&gt;&lt;span style=&quot;font-size:0em;&quot;&gt;​&lt;/span&gt;&lt;/span&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;.  In the case of influenza antigenic phenotype we expect noise in the &lt;a href=&quot;http://en.wikipedia.org/wiki/Hemagglutination_assay&quot;&gt;hemagglutination inhibition (HI) assay&lt;/a&gt; to contribute to total variance, so &lt;em&gt;H&lt;/em&gt;&lt;sup&gt;2&lt;/sup&gt; = ~0.73 should represent a lower bound to actual heritability.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 27 Oct 2014 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/phylogenetic-signal/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/phylogenetic-signal/</guid>
+			</item>
+		
+			<item>
+				<title>Reassortment between influenza B lineages</title>
+				<description>&lt;p&gt;&lt;a href=&quot;http://tree.bio.ed.ac.uk/people/gdudas/&quot;&gt;Gytis Dudas&amp;#39;s&lt;/a&gt; paper on &lt;a href=&quot;/papers/dudas-flub-reassortment/&quot;&gt;&amp;quot;Reassortment between influenza B lineages...&amp;quot;&lt;/a&gt; has just been published in &lt;a href=&quot;http://mbe.oxfordjournals.org/content/early/2014/10/15/molbev.msu287.abstract&quot;&gt;Molecular Biology and Evolution&lt;/a&gt;.  As discussed in &lt;a href=&quot;/blog/flub-reassortment/&quot;&gt;March&amp;#39;s blog post&lt;/a&gt;, we used full genome sequences of the two main lineages or &amp;quot;species&amp;quot; of &lt;a href=&quot;http://en.wikipedia.org/wiki/Influenzavirus_B&quot;&gt;influenza B virus&lt;/a&gt; (B/Victoria and B/Yamagata) to assess patterns of gene reassortment, in which genes from one lineage &lt;a href=&quot;http://en.wikipedia.org/wiki/Introgression&quot;&gt;introgress&lt;/a&gt; into the other lineage&amp;#39;s genetic background during mixed infection events. We find interesting patterns in which some genes move readily between lineages, while other genes maintain separate identities.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;m very proud of the open science effort here.  We&amp;#39;ve had this paper up on the &lt;a href=&quot;http://arxiv.org/abs/1403.1094&quot;&gt;arXiv&lt;/a&gt; since March and have &lt;a href=&quot;https://github.com/evogytis/fluB/issues?q=is%3Aissue+is%3Aclosed&quot;&gt;tracked reviews and our responses publicly on GitHub&lt;/a&gt;.  Gytis has also supplied all &lt;a href=&quot;https://github.com/evogytis/fluB/tree/master/data&quot;&gt;data&lt;/a&gt; and &lt;a href=&quot;https://github.com/evogytis/fluB/tree/master/scripts&quot;&gt;scripts&lt;/a&gt; to run the analysis and generate figures in the public GitHub repository.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 16 Oct 2014 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/flub-publication/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/flub-publication/</guid>
+			</item>
+		
+			<item>
+				<title>Uncovering the &quot;hidden history&quot; of HIV emergence and spread</title>
+				<description>&lt;p&gt;We just published a paper in &lt;a href=&quot;http://www.sciencemag.org/content/346/6205/56.short&quot;&gt;Science&lt;/a&gt; that uses phylogeographic approaches to uncover the &lt;a href=&quot;/papers/faria-hiv-spread/&quot;&gt;early history of HIV-1 emergence and spread&lt;/a&gt; in what is now the Democratic Republic of the Congo (DRC). I played only a small role with this, &lt;a href=&quot;http://evolve.zoo.ox.ac.uk/Evolve/Nuno_Faria.html&quot;&gt;Nuno Faria&lt;/a&gt; and &lt;a href=&quot;https://rega.kuleuven.be/cev/ecv/lab-members/PhilippeLemey.html&quot;&gt;Philippe Lemey&lt;/a&gt; are responsible for most of the research. Using modern phylogeographic methods and an extensive dataset isolates from the DRC, we establish that the HIV-1 group M viruses share a common ancestor in a virus that existed in Kinshasa, the capital of the DRC, sometime between 1909 and 1930.  HIV-1 group M viruses represent one of multiple zoonotic transmission events that brought viruses endemic to the chimpanzee population into the human population.  However, other transmission events resulting in HIV-1 groups N, O and P did not catch and spread the same way that HIV-1 group M viruses managed to; group M viruses now comprise over 90% of HIV infections worldwide.  We find that HIV-1 group M viruses spread from Kinshasa to other parts of the DRC along rail and waterway connections starting in the 1940s.  We also find evidence for an increase in transmission rate of viruses within Kinshasa from approximately 1960 to 1980, which is hypothesized to have resulted from the use of unsterilized injections at STD clinics.  This work represents the most detailed investigation of the early origins of the HIV pandemic to date.&lt;/p&gt;
+</description>
+				<pubDate>Thu, 02 Oct 2014 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/hidden-history/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/hidden-history/</guid>
+			</item>
+		
+			<item>
+				<title>Challenges in phylodynamics</title>
+				<description>&lt;p&gt;We&amp;#39;ve just had a review paper published in &lt;a href=&quot;http://dx.doi.org/10.1016/j.epidem.2014.09.001&quot;&gt;Epidemics&lt;/a&gt; outlining &lt;a href=&quot;/papers/frost-challenges/&quot;&gt;eight challenges in phylodynamic inference&lt;/a&gt; lead by &lt;a href=&quot;http://www.vet.cam.ac.uk/directory/sdf22@cam.ac.uk&quot;&gt;Simon Frost&lt;/a&gt;. This paper is part of an entire issue devoted to challenges in infectious disease dynamics that grew out of last year&amp;#39;s &lt;a href=&quot;http://www.newton.ac.uk/event/IDD&quot;&gt;Isaac Newton Institute workshop&lt;/a&gt;. Other interesting papers in the issue include challenges in &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S1755436514000310&quot;&gt;spatial epidemic models&lt;/a&gt; and challenges in &lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S1755436514000504&quot;&gt;modeling emergence of novel pathogens&lt;/a&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 26 Sep 2014 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/challenges-in-phylodynamics/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/challenges-in-phylodynamics/</guid>
+			</item>
+		
+			<item>
+				<title>Avian influenza diversity and persistence</title>
+				<description>&lt;p&gt;We just had a paper published in &lt;a href=&quot;http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.1001931&quot;&gt;PLoS Biology&lt;/a&gt; on evolution and genetic diversity in avian influenza viruses.  &lt;a href=&quot;https://sites.google.com/site/rocheben/&quot;&gt;Benjamin Roche&lt;/a&gt; put in a lot of work for this, on both the sequence analysis side as well as the epidemiological modeling.  I only really advised a bit on how to do the evolutionary analyses.&lt;/p&gt;
+
+&lt;p&gt;The basic result is rather interesting.  If you take &lt;a href=&quot;http://en.wikipedia.org/wiki/Influenza_hemagglutinin&quot;&gt;hemagglutinin&lt;/a&gt; (HA) proteins from different &lt;a href=&quot;http://en.wikipedia.org/wiki/Avian_influenza&quot;&gt;avian influenza viruses&lt;/a&gt; you observe that some subtypes are more &amp;#39;durable&amp;#39; than other subtypes.  Basically, they survive longer sitting out on a lab bench.  Some average just a few days, and others more than 20.  We find more durable subtypes show greater genetic diversity across bird populations than the more fragile subtypes.  The rest of the paper is investigating an epidemiological model to see if environmental persistence (on the scale of a few weeks) could result in the observed correlation between diversity and durability.&lt;/p&gt;
+</description>
+				<pubDate>Fri, 15 Aug 2014 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/aiv-persistence/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/aiv-persistence/</guid>
+			</item>
+		
+			<item>
+				<title>Assessing correlated trait evolution</title>
+				<description>&lt;p&gt;We&amp;#39;ve posted a new paper to the &lt;a href=&quot;http://arxiv.org/abs/1406.3863&quot;&gt;arXiv&lt;/a&gt; on analyzing trait evolution across a phylogeny using Felsenstein&amp;#39;s latent liability model. This model allows discrete traits and continuous traits to be incorporated into the same framework and correlations assessed. I played only a small role in compiling data and helping with the analysis of epitope evolution in influenza. Here, we find abundant coevolution at amino acid sites responsible for the virus&amp;#39;s immunological phenotype. This suggests mutating away from human immunity may depend on controlling epistatic interactions among sites, likely making antigenic escape more difficult for the virus.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 25 Jun 2014 00:00:00 +0100</pubDate>
+				<link>http://bedford.io/blog/latent-liability/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/latent-liability/</guid>
+			</item>
+		
+			<item>
+				<title>Molecular evolution of the human B cell repertoire</title>
+				<description>&lt;p&gt;Another paper posted to the &lt;a href=&quot;http://arxiv.org/abs/1403.3066&quot;&gt;arXiv&lt;/a&gt;... this one on a new and exciting research direction for me, looking at sequence changes within an individual&amp;#39;s B cell repertoire as an evolutionary process, amenable to modern phylogenetic inference methods.  Basically, in order to promote immunity that protects against a wide range of possible pathogens, the adaptive immune response creates &lt;a href=&quot;http://en.wikipedia.org/wiki/Antibody&quot;&gt;antibodies&lt;/a&gt; that target specific &lt;a href=&quot;http://en.wikipedia.org/wiki/Antigen&quot;&gt;antigens&lt;/a&gt;.  Antibodies are encoded in the immunoglobulin genes of &lt;a href=&quot;http://en.wikipedia.org/wiki/B_cell&quot;&gt;B cells&lt;/a&gt;.  Rather than attempting to encode all possible antibodies within the human genome (which would be impossible), B cell immunoglobulin sequences are seeded by a process of random rearrangement of germline (inherited) sequences, termed &lt;a href=&quot;http://en.wikipedia.org/wiki/VDJ_recombination&quot;&gt;VDJ recombination&lt;/a&gt;.  After this initial rearrangement, B cells that successfully (if partially) bind to antigen are stimulated to reproduce, during which time additional mutations are induced through &lt;a href=&quot;http://en.wikipedia.org/wiki/Somatic_hypermutation&quot;&gt;somatic hypermutation&lt;/a&gt;.  Mutated B cells that bind better will outcompete poorer binders via Darwinian selection resulting in B cell &lt;a href=&quot;http://en.wikipedia.org/wiki/Affinity_maturation&quot;&gt;affinity maturation&lt;/a&gt; towards circulating antigens.  A schematic of this whole process can be seen &lt;a href=&quot;/images/blog/bcell_overview_detail.png&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#39;s been exciting starting to look at B cell affinity maturation from an evolutionary perspective.  &lt;a href=&quot;http://matsen.fhcrc.org/&quot;&gt;Erick Matsen&lt;/a&gt; has really inspired this interest and it&amp;#39;s been great helping him, &lt;a href=&quot;http://cmccoy.github.io/&quot;&gt;Connor McCoy&lt;/a&gt; and &lt;a href=&quot;http://www.stat.washington.edu/vminin/&quot;&gt;Vladimir Minin&lt;/a&gt; develop this project.  &lt;a href=&quot;/papers/mccoy-bcell-evol/&quot;&gt;In this paper&lt;/a&gt;, we fit substitution models and analyzed selective pressures in a short-read deep-sequencing data set of B cell receptor genes from three healthy individuals (courtesy of &lt;a href=&quot;http://www.fhcrc.org/en/labs/profiles/robins-harlan.html&quot;&gt;Harlan Robins&lt;/a&gt;).  We found strikingly similar patterns across individuals in terms of exactly which sites evolved and which nucleotides replacements occurred.  In this case, we did a pairwise analysis comparing observed read to matched germline sequence.  Future methodological development will focus on identifying B cells that descend from a common rearrangement event and reconstructing their phylogenies.&lt;/p&gt;
+</description>
+				<pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
+				<link>http://bedford.io/blog/bcell-evolution/</link>
+				<guid isPermaLink="true">http://bedford.io/blog/bcell-evolution/</guid>
+			</item>
+		
+	</channel>
+</rss>

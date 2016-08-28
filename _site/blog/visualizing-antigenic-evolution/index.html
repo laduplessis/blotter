@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Analysis and visualization of influenza antigenic evolution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://bedford.io/feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/js/transition.js"></script>
+	<script src="/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+			<div class="container">	
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+										
+					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/">bedford lab</a>
+					
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-element">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li class="active">
+						
+						<a href="/blog/">blog</a>
+						</li>
+						
+						<li>
+						
+						<a href="/papers/">papers</a>
+						</li>
+						
+						<li>
+						
+						<a href="/projects/">projects</a></li>	  
+						
+						<li>
+						
+						<a href="/team/">team</a></li>	  	  
+					</ul>
+				</div>
+			</div>
+		</nav>	
+	</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/blog/visualizing-antigenic-evolution/" class="off">Analysis and visualization of influenza antigenic evolution</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						06 Oct 2015
+						
+						by <a class="off" href="/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			
+			<a href="http://HI.nextflu.org">
+				<img class="offset" src="/images/blog/titer_tree.png">
+			</a>			
+							
+			
+			<div class="post">
+				<p><a href="https://neherlab.wordpress.com/">Richard Neher</a> and <a href="http://www.kitp.ucsb.edu/shraiman/">Boris Shraiman</a>, along with myself, <a href="http://www.vet.cam.ac.uk/directory/russell">Colin Russell</a> and <a href="http://www.crick.ac.uk/research/worldwide-influenza-centre/">Rod Daniels</a> have just completed a new analysis of antigenic drift in the seasonal influenza virus. We&#39;ve put a manuscript on <a href="/papers/neher-titers/">&quot;Prediction, dynamics, and visualization of antigenic phenotypes of seasonal influenza viruses&quot;</a> up on the <a href="http://arxiv.org/abs/1510.01195">arXiv</a> and have created an interactive visualization of our model at <a href="http://HI.nextflu.org">HI.nextflu.org</a>.</p>
+
+<p>Much previous work on this topic, <a href="/papers/bedford-flux/">including my own</a>, has focused on &quot;antigenic cartography&quot; in which antigenic phenotype is embedded into a 2D antigenic map where distances between viruses are proportional to drop in titer in the hemagglutination inhibition (HI) assay. Here, we take a complementary approach where drop in titer is directly mapped to the influenza phylogeny; specific branches are assigned drops in titer. Thus, rather than embedding into 2D Euclidean space, this model assumes embedding into tree space. As a model, it works quite well, allowing prediction of unmeasured titers at high accuracy. In the manuscript, we investigate the correlation between antigenic advancement and clade success, finding that more advanced clades tend to win in the global competition among viruses. However, we observe significant noise when the new clade is at very low frequency.</p>
+
+<p>A major feature of the cartography-based approach is providing a single pictorial view of the antigenic relationships among viruses. This is enabled by the 2D basis for cartography. The tree-based model that we present here does not permit a single viewpoint. Instead, we provide an <a href="http://HI.nextflu.org">interactive visualization</a> of the model, in which users can click on a particular reference virus in the phylogeny and see how other viruses relate to this focal virus. We allow coloring of the phylogeny by raw HI titer, as well as by model expectations, allowing exploration of <em>why</em> the model behaves as it does. We hope this approach will be useful in investigation of antigenic relationships among circulating influenza viruses.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+

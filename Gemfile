@@ -14,3 +14,8 @@ gem 'jekyll-press'
 # octokit
 gem 'octokit'
 gem 'netrc'
+
+# didn't compile
+gem 'rouge'
+gem 'listen'
+gem 'jekyll-press'

@@ -48,23 +48,7 @@ exclude:
   - "projects/nextflu/auspice/js/*"    
 
 projects:
-  - trvrb/coaltrace
-  - trvrb/stem
-  - trvrb/PACT
-  - trvrb/dynamics-practical
-  - trvrb/antigen
   - trvrb/haplotypes
-  - trvrb/divergence
-  - trvrb/ancestry
-  - trvrb/medium-data
-  - trvrb/flutrace
-  - blab/nextflu
   - alvason/infectious-pulse
-  - blab/global-migration
-  - trvrb/sismid
-  - trvrb/sctrace
   - trvrb/phylodynamics-lecture
-  - blab/nextstrain-db
-  - blab/nextstrain-augur
-  - blab/nextstrain-auspice
   - blab/baltic
