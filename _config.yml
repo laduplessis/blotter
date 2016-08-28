@@ -1,6 +1,6 @@
 name: Bedford Lab Research
 description: Science updates on evolution, epidemiology and immunology from the Bedford lab at the Fred Hutch
-baseurl: /Taming_the_BEAST_blotter
+baseurl: /blotter
 url: http://laduplessis.github.io/
 
 markdown: redcarpet
