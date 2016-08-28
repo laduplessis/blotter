@@ -10,7 +10,7 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 	
     <!-- Customized Bootstrap + Font Awesome + Solarized -->
-    <link href="/css/style.css" rel="stylesheet" media="screen">
+    <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="/images/favicon.png"/>	
@@ -71,7 +71,7 @@
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/blog/">blog</a>
+						<a href="{{ site.baseurl }}/blog/">blog</a>
 						</li>
 						{% if page.categories.first == 'papers' %}
 						<li class="active">
