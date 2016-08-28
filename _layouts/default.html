@@ -13,7 +13,7 @@
     <link href="{{ site.baseurl }}/css/style.css" rel="stylesheet" media="screen">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="/images/favicon.png"/>	
+	<link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.png"/>	
 
 	<!-- Typekit -->
 	<script>
@@ -33,17 +33,17 @@
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('create', 'UA-26244371-2', 'laduplessis.github.io/Taming_the_BEAST_blotter');
 		ga('send', 'pageview');
 
 	</script>
 	
 	<!-- jQuery -->
-	<script src="/js/jquery.min.js"></script>
+	<script src="{{ site.baseurl }}/js/jquery.min.js"></script>
 	
 	<!-- Bootstrap -->
-	<script src="/js/transition.js"></script>
-	<script src="/js/collapse.js"></script>
+	<script src="{{ site.baseurl }}/js/transition.js"></script>
+	<script src="{{ site.baseurl }}/js/collapse.js"></script>
 
 </head>
 
@@ -60,8 +60,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					{% if page.categories.first != 'home' %}					
-					<object class="logo navbar-brand" data="/images/logo.svg" type="image/svg+xml"></object>
-					<a class="navbar-brand" href="/">bedford lab</a>
+					<object class="logo navbar-brand" data="{{ site.baseurl }}/images/logo_bw.svg" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="{{ site.baseurl }}/">Taming the BEAST</a>
 					{% endif %}
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-element">
@@ -78,20 +78,20 @@
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/papers/">papers</a>
+						<a href="{{ site.baseurl }}/papers/">papers</a>
 						</li>
 						{% if page.categories.first == 'projects' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/projects/">projects</a></li>	  
+						<a href="{{ site.baseurl }}/projects/">projects</a></li>	  
 						{% if page.categories.first == 'team' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="/team/">team</a></li>	  	  
+						<a href="{{ site.baseurl }}/team/">team</a></li>	  	  
 					</ul>
 				</div>
 			</div>

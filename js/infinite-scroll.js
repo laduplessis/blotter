@@ -7,7 +7,7 @@ $(function() {
       loadNewPostsThreshold = 3000;
   
   // Load the JSON file containing all URLs
-  $.getJSON('/all-posts.json', function(data) {
+  $.getJSON('../all-posts.json', function(data) {
     postURLs = data["posts"];
     console.log(postsToLoad);
 

@@ -37,18 +37,9 @@ exclude:
   - "*.nex"
   - "Gemfile"
   - "Gemfile.lock"
-  - "projects/nextflu/auspice/index.html"
-  - "projects/nextflu/auspice/css/*"
-  - "projects/nextflu/auspice/h3n2/*"
-  - "projects/nextflu/auspice/h1n1pdm/*"
-  - "projects/nextflu/auspice/vic/*"
-  - "projects/nextflu/auspice/yam/*"
-  - "projects/nextflu/auspice/zika/*"  
-  - "projects/nextflu/auspice/muttree/*"
-  - "projects/nextflu/auspice/reports/*"
-  - "projects/nextflu/auspice/js/*"    
-
+  
 projects:
+  - laduplessis/SkylineTutorial
   - trvrb/haplotypes
   - alvason/infectious-pulse
   - trvrb/phylodynamics-lecture

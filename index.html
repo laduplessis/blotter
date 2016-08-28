@@ -1,15 +1,15 @@
 ---
 layout: default
-title: bedford lab
+title: Taming the BEAST
 categories:
  - home
 ---
 
 <div class="row">
 	<div class="col-md-12">
-		<object class="pull-left biglogo" data="/images/logo.svg" type="image/svg+xml"></object>
+		<object class="pull-left biglogo" data="{{ site.baseurl }}/images/logo_bw.svg" type="image/svg+xml"></object>
 		<div class="bigtitle logobox">
-			bedford lab research
+			Taming the BEAST
 		</div>
 	</div>
 </div>
@@ -34,7 +34,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="/blog/">Recent posts</a>
+			<a class="off" href="{{ site.baseurl }}/blog/">News</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -76,39 +76,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="/papers/">Recent papers</a>
-		</div>
-		<div class="spacer"></div>
-	</div>
-</div>
-
-<div class="row">		
-	{% for paper in site.categories.papers limit:4 %}		
-	<div class="col-md-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ paper.url }}">
-				{{ paper.title }}
-				</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ paper.date | date: "%-d %b %Y" }}
-			</div>
-			<div class="bigspacer"></div>
-		</div>
-	</div>
-	{% endfor %}	
-</div>
-
-<div class="spacer"></div>
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="head">
-			<a class="off" href="/projects/">Active projects</a>
+			<a class="off" href="{{ site.baseurl }}/projects/">Recently updated tutorials</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -120,18 +88,18 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url }}">
+				<a class="off" href="{{ project.url | prepend: site.baseurl}}">
 				{{ project.title }} - {{ project.description }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
+				<a class="off" href="{{ project.commits.first.url | prepend: site.baseurl}}">
 				{{ project.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ project.commits.first.author_url }}">				
+				<a class="off" href="{{ project.commits.first.author_url | prepend: site.baseurl}}">				
 				{{ project.commits.first.author_login }}
 				</a>
 			</div>
@@ -143,7 +111,7 @@ categories:
 
 <div class="spacer"></div>
 
-<div class="row">
+<!--div class="row">
 	<div class="col-md-12">
 		<div class="head">		
 			Misc
@@ -171,4 +139,4 @@ categories:
 		</div>
 		<div class="spacer"></div>		
 	</div>
-</div>
+</div-->
