@@ -30,6 +30,12 @@
 					<li>
 					{% endif %}
 					<a href="{{ site.baseurl }}/tutorials/">tutorials</a></li>	    	  
+					{% if page.categories.first == 'about' %}
+					<li class="active">
+					{% else %}
+					<li>
+					{% endif %}
+					<a href="{{ site.baseurl }}/about/">about</a></li>	    	  
 				</ul>
 			</div>
 			
