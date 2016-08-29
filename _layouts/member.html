@@ -8,7 +8,7 @@ layout: default
 	<div class="col-md-12">
 		<div class="media">
 			{% if member.image %}
-			<img class="pull-left pad-right media-object" width=120 src="{{ member.image }}">
+			<img class="pull-left pad-right media-object" width=120 src="{{ member.image | prepend: site.baseurl }}">
 			{% endif %}
 			<div class="media-body titlebox">
 				<div class="bigtitle media-heading">
@@ -34,7 +34,7 @@ layout: default
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-file-text-o fa-fw"></i>			
-			<a class="off" href="{{ member.cv }}">{{ member.cv | split: '/' | last }}</a>
+			<a class="off" href="{{ member.cv | prepend: site.basurl }}">{{ member.cv | split: '/' | last }}</a>
 		</div>		
 		<div class="bigspacer"></div>		
 		{% endif %}	  		

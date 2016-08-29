@@ -24,5 +24,4 @@ A lot of the things are great and should be left alone (font and KaTeX for equat
 
 - I don't like Trevor's navigation bar. It is overly complicated (it takes a lot of code to make a collapsible navbar that can't be collapsed). 
 - The website needs a footer.
-
-
+- Team should be removed.

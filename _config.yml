@@ -37,7 +37,7 @@ exclude:
   - "*.nex"
   - "Gemfile"
   - "Gemfile.lock"
-  
+
 tutorials:
   - laduplessis/SkylineTutorial
   - trvrb/haplotypes
