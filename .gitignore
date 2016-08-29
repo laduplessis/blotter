@@ -5,6 +5,10 @@ _site/
 projects/
 !projects/index.html
 
+# Tutorials
+tutorials/
+!tutorials/index.html
+
 # Jekyll metadata
 .jekyll-metadata
 

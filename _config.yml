@@ -38,7 +38,7 @@ exclude:
   - "Gemfile"
   - "Gemfile.lock"
   
-projects:
+tutorials:
   - laduplessis/SkylineTutorial
   - trvrb/haplotypes
   - alvason/infectious-pulse
