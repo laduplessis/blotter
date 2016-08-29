@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Model comparison through path sampling and AICM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://laduplessis.github.io//feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/blotter/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/blotter/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'laduplessis.github.io/Taming_the_BEAST_blotter');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/blotter/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/blotter/js/transition.js"></script>
+	<script src="/blotter/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+		<div class="container">	
+
+			<div class="navbar-header">
+				<!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button-->
+									
+				<a class="navbar-brand" href="/blotter/">Taming the BEAST</a>
+				<object class="logo navbar-brand" data="/blotter/images/logo_bw.svg" type="image/svg+xml"></object>
+				
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-element">
+				<ul class="nav navbar-nav navbar-right">					
+					
+					<li class="active">
+					
+					<a href="/blotter/news/">news</a>
+					</li>
+					
+					<li>
+					
+					<a href="/blotter/tutorials/">tutorials</a></li>	    	  
+				</ul>
+			</div>
+			
+		</div>
+	</nav>	
+</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/blotter/news/model-comparison/" class="off">Model comparison through path sampling and AICM</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						12 Mar 2012
+						
+						by <a class="off" href="/blotter/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			
+			<a href="/blotter/papers/baele-path-sampling/">
+				<img class="offset" src="/blotter/images/blog/roc_curve.png">
+			</a>			
+							
+			
+			<div class="post">
+				<p>We just had a paper published in MBE <a href="/papers/baele-path-sampling/">on comparing different phylogenetic models</a>.  Generally, its much easier to estimate the parameters of a particular model (including a level of uncertainty on these estimates) than it is to assess which model of several is the &quot;best&quot; fit.  More complicated models will necessarily better fit the data at hand.  However, overly complicated models will be brittle and not generalize well when new data is confronted.  Thus, there is a trade-off between number of effective parameters and a model&#39;s likelihood.  Assessing this trade-off can be quite difficult computationally.</p>
+
+<p>Here, <a href="http://www.kuleuven.be/rega/ecv/GuyBaele.html">Guy Baele</a> put in a lot of effort to implement very general methods of &quot;thermodynamic integration&quot; (as it&#39;s known in the phylogenetics literature) or &quot;path sampling&quot; (as it&#39;s known in the statistics literature) into <a href="http://beast.bio.ed.ac.uk/">BEAST</a>.  The basic idea is very similar to what Ed and I did with <a href="/papers/baskerville-group-model/">the food web analysis paper</a>, calculate a marginal likelihood by comparing the posterior likelihood across MCMC chains at different &quot;temperatures&quot;.  The MBE paper shows that this estimate is much more accurate and repeatable than the very popular harmonic mean estimator of marginal likelihood.</p>
+
+<p>For the paper, I did most of the work involving measuring <a href="http://en.wikipedia.org/wiki/Akaike_information_criterion">Akaike information criteria (AIC)</a> in a Bayesian Monte Carlo context, and thus called AICM.  This measure has the computational advantage that, like the harmonic mean estimator, it can be computed directly from MCMC runs produced by BEAST or another piece of software, without resorting to a second, more-complicated, analysis.  We find that AICM does not match path sampling for accuracy, but definitely beats the harmonic mean.  It&#39;s currently implemented in BEAST XML and will be built in to the next version of <a href="http://tree.bio.ed.ac.uk/software/tracer/">Tracer</a>.  </p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+

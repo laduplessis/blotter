@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Reproducible peer review</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Bedford Lab Research" href="http://laduplessis.github.io//feed.xml">
+	
+    <!-- Customized Bootstrap + Font Awesome + Solarized -->
+    <link href="/blotter/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/blotter/images/favicon.png"/>	
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+		
+	<!-- Google Analytics -->	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'laduplessis.github.io/Taming_the_BEAST_blotter');
+		ga('send', 'pageview');
+
+	</script>
+	
+	<!-- jQuery -->
+	<script src="/blotter/js/jquery.min.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="/blotter/js/transition.js"></script>
+	<script src="/blotter/js/collapse.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="header">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+		<div class="container">	
+
+			<div class="navbar-header">
+				<!--button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button-->
+									
+				<a class="navbar-brand" href="/blotter/">Taming the BEAST</a>
+				<object class="logo navbar-brand" data="/blotter/images/logo_bw.svg" type="image/svg+xml"></object>
+				
+			</div>
+
+			<div class="collapse navbar-collapse" id="navbar-collapse-element">
+				<ul class="nav navbar-nav navbar-right">					
+					
+					<li class="active">
+					
+					<a href="/blotter/news/">news</a>
+					</li>
+					
+					<li>
+					
+					<a href="/blotter/tutorials/">tutorials</a></li>	    	  
+				</ul>
+			</div>
+			
+		</div>
+	</nav>	
+</div>
+	
+	<div class="container">	
+		
+	
+
+<div class="blog-post">
+	<div class="row">
+		<div class="col-md-1"></div>	
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="/blotter/news/reproducible-peer-review/" class="off">Reproducible peer review</a>
+					</div>
+					<p>
+					<div class="smallhead">
+						13 Dec 2011
+						
+						by <a class="off" href="/blotter/team/trevor-bedford/">trvrb</a>
+								
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-1"></div>					
+	</div>
+
+	<div class="bigspacer"></div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">	
+			
+			<div class="post">
+				<p>I discovered this <a href="http://brain.oxfordjournals.org/content/123/9/1964">paper by Peter Rothwell and Christopher Martyn</a> through an excellent <a href="http://blogs.scientificamerican.com/guest-blog/2011/11/02/what-is-peer-review-for/">blog post by Bradley Voytek</a>.  In the paper, the authors show that reviews of the same paper by two independent reviewers show a level of agreement little better than expected by chance alone.  The authors repeat their experiment across two neuroscience journals.  For the first journal, they have 179 pairs of reviews, with 219 of the 358 votes (61%) recommending acceptance or acceptance with revision.  If votes between reviewers were distributed entirely by chance, we would expect 67 accept-accept pairs, 43 accept-reject pairs, 43 reject-accept pairs and 27 reject-reject pairs.  However, if the reviewers are coming to some sort of scientific consensus we would see an overabundance of accept-accept and reject-reject pairs.  </p>
+
+<p>Here, I&#39;ve shown their findings, with observed and (expected) counts for each scenario.  In journal A, there appears to be little or no difference from the chance expectation, while journal B shows a very modest improvement over the chance expectation.  A simple Fisher&#39;s exact test gives a <em>P</em> value of 0.285 on the results of journal A and a <em>P</em> value of less than 0.0001 on the results of journal B.  Additionally, Rothwell and Martyn find little correspondence in reviewer&#39;s assessments of priority of publication.</p>
+
+<table><thead>
+<tr>
+<th>Journal A</th>
+<th>Accept</th>
+<th>Reject</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Accept</td>
+<td>71 (67)</td>
+<td>35 (43)</td>
+</tr>
+<tr>
+<td>Reject</td>
+<td>42 (43)</td>
+<td>31 (27)</td>
+</tr>
+</tbody></table>
+
+<table><thead>
+<tr>
+<th>Journal B</th>
+<th>Accept</th>
+<th>Reject</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Accept</td>
+<td>57 (47)</td>
+<td>18 (27)</td>
+</tr>
+<tr>
+<td>Reject</td>
+<td>16 (27)</td>
+<td>25 (15)</td>
+</tr>
+</tbody></table>
+
+<p>Interestingly, the authors studied reproducibility of abstract acceptance at two different scientific conferences.  Here, each abstract was reviewed and rated on a 1 to 6 scale by a panel of 14 or 16 reviewers.  In this case, variance across abstracts can be assessed, but also variance across reviewers (we expect some reviewers to be tougher than others in their assessments).  Rothwell and Martyn find a very modest <em>R</em><sup>2</sup> across abstracts of 0.11–0.15, indicating very little reviewer agreement.  However, <em>R</em><sup>2</sup> across reviewers was a more respectable 0.27–0.32, suggesting more variation in reviewer &quot;toughness&quot;.</p>
+
+<p>Thus, it appears that in small samples of two or three reviewers, noise from positive/negative reviewer bias may swamp the signal of a particular manuscript.  This fits with my own anecdotal experiences.  Usually (but by no means always) reviewers seem to agree on what&#39;s lacking in a manuscript, but will often disagree on how terrible a particular failing is to the manuscript&#39;s prospects.  Perhaps if each reviewer&#39;s overall positive/negative rating bias were taken into account, we could arrive at a measure of manuscript quality that is more repeatable between independent reviewers.  In turn, this could make authors less beholden to the roll of the reviewer die.</p>
+
+			</div>	
+		</div>			
+		<div class="col-md-1"></div>
+	</div>
+	
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>	
+
+</div>
+
+	
+	</div>
+	
+	<div id="footer"><span style="display:none">foo</span></div>
+		
+</body>
+</html>
+
