@@ -34,7 +34,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="{{ site.baseurl }}/news/">News</a>
+			<a class="off" href="{{ site.baseurl }}/news/">news</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -76,31 +76,31 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="{{ site.baseurl }}/projects/">Recently updated tutorials</a>
+			<a class="off" href="{{ site.baseurl }}/projects/">recently updated tutorials</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
 </div>
 
 <div class="row">		
-	{% for project in site.data.projects limit:4 %}		
+	{% for tutorial in site.data.tutorials limit:4 %}		
 	<div class="col-md-3 reduced-gutter">
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ project.url | prepend: site.baseurl}}">
-				{{ project.title }} - {{ project.description }}
+				<a class="off" href="{{ tutorial.url | prepend: site.baseurl}}">
+				{{ tutorial.title }} - {{ tutorial.description }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				Updated
-				<a class="off" href="{{ project.commits.first.url | prepend: site.baseurl}}">
-				{{ project.commits.first.date | date: "%-d %b %Y" }}
+				<a class="off" href="{{ tutorial.commits.first.url | prepend: site.baseurl}}">
+				{{ tutorial.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ project.commits.first.author_url | prepend: site.baseurl}}">				
-				{{ project.commits.first.author_login }}
+				<a class="off" href="{{ tutorial.commits.first.author_url | prepend: site.baseurl}}">				
+				{{ tutorial.commits.first.author_login }}
 				</a>
 			</div>
 			<div class="bigspacer"></div>

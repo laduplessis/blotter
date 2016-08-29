@@ -1,8 +1,8 @@
 ---
 layout: default
-title: bedford lab / blog / archive
+title: bedford Taming the BEAST / news / archive
 categories: 
- - blog
+ - news
 ---
 
 <div class="row">
@@ -10,12 +10,12 @@ categories:
 		<div class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation">
-					<a class="off" href="{{ site.baseurl }}/blog/">
+					<a class="off" href="{{ site.baseurl }}/news/">
 						<i class="fa fa-refresh fa-fw"></i> Timeline
 					</a>
 				</li>
 				<li role="presentation" class="active">
-					<a class="off" href="{{ site.baseurl }}/blog/archive/">
+					<a class="off" href="{{ site.baseurl }}/news/archive/">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
@@ -25,7 +25,7 @@ categories:
 	</div>
 </div>
 
-{% for post in site.categories.blog %}
+{% for post in site.categories.news %}
 
 	{% for member in site.categories.team %}
 		{% if member.title == post.author %}
