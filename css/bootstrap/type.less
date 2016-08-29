@@ -243,10 +243,14 @@ abbr[data-original-title] {
 
 // Blockquotes
 blockquote {
-  padding: (@line-height-computed / 2) @line-height-computed;
-  margin: 0 0 @line-height-computed;
-  font-size: @blockquote-font-size;
-  border-left: 5px solid @blockquote-border-color;
+  padding: ((@line-height-computed - 1) / 2);
+  margin: 0 0 (@line-height-computed / 2);
+  font-size: (@font-size-base - 1); // 14px to 13px
+  line-height: @line-height-base;
+  border: 1px solid @pre-border-color;
+  border-radius: @border-radius-base;
+  background-color: @blockquote-bg;
+
 
   p,
   ul,

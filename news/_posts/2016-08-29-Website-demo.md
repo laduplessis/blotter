@@ -4,7 +4,7 @@ title: Website style and ideas
 author: Louis du Plessis
 ---
 
-# Summary
+## Summary
 
 BEAST is a complex program and with the resources available on the internet it is challenging to learn BEAST without the help of an expert. 
 Workshops, summer schools and lectures can only reach a handful of the people interested in performing BEAST analyses. 
@@ -17,7 +17,7 @@ A core aspect of the site is that it should be straightforward to add or edit tu
 
 
 
-# Website style and layout
+## Website style and layout
 
 Based on Trevor Bedford's lab website [bedford.io](http://bedford.io). I haven't changed much so far, besides text and logos. It can (and probably) should be changed. 
 A lot of the things are great and should be left alone (font and KaTeX for equations are both beautiful). Some other things I think should probably have a high priority: 
@@ -25,3 +25,4 @@ A lot of the things are great and should be left alone (font and KaTeX for equat
 - I don't like Trevor's navigation bar. It is overly complicated (it takes a lot of code to make a collapsible navbar that can't be collapsed). 
 - The website needs a footer.
 - Team should be removed.
+- KaTeX is beautiful, but it does not support all the LaTeX mathematics environments. If we run into problems we should switch to MathJax, which seems to work with everything (but isn't as beautiful). 
