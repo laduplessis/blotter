@@ -16,13 +16,13 @@
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse-element">
-				<ul class="nav navbar-nav navbar-right">
-					{% if page.categories.first == 'blog' %}
+				<ul class="nav navbar-nav navbar-right">					
+					{% if page.categories.first == 'news' %}
 					<li class="active">
 					{% else %}
 					<li>
 					{% endif %}
-					<a href="{{ site.baseurl }}/blog/">blog</a>
+					<a href="{{ site.baseurl }}/news/">news</a>
 					</li>
 					{% if page.categories.first == 'tutorials' %}
 					<li class="active">

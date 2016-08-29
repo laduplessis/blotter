@@ -1,9 +1,9 @@
 ---
 layout: default
-title: bedford lab / blog
+title: Taming the BEAST / news
 categories: 
- - blog
-category: blog
+ - news
+category: news
 ---
 
 <div class="row">
@@ -28,7 +28,7 @@ category: blog
 
 <div class="post-list">
 
-{% for post in site.categories.blog limit: 8 %}
+{% for post in site.categories.news limit: 8 %}
 
 	{% for member in site.categories.team %}
 		{% if member.title == post.author %}
@@ -95,7 +95,7 @@ category: blog
 		<div id="scroll" class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation">
-					<a class="off" href="{{ site.baseurl }}/blog/">
+					<a class="off" href="{{ site.baseurl }}/news/">
 						<i class="fa fa-chevron-up fa-fw"></i> Back to top
 					</a>
 				</li>				
