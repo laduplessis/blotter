@@ -4045,7 +4045,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 60px;
+  min-height: 100px;
   margin-bottom: 30px;
   border: 1px solid transparent;
 }
@@ -4151,10 +4151,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 19px 15px;
+  padding: 39px 15px;
   font-size: 18px;
   line-height: 22px;
-  height: 60px;
+  height: 100px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4174,8 +4174,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: right;
   margin-right: 15px;
   padding: 9px 10px;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  margin-top: 33px;
+  margin-bottom: 33px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -4199,7 +4199,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 9.5px -15px;
+  margin: 19.5px -15px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4237,8 +4237,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 39px;
+    padding-bottom: 39px;
   }
 }
 .navbar-form {
@@ -4249,8 +4249,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 @media (min-width: 768px) {
   .navbar-form .form-group {
@@ -4335,20 +4335,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-left-radius: 0;
 }
 .navbar-btn {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .navbar-btn.btn-sm {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 .navbar-btn.btn-xs {
-  margin-top: 19px;
-  margin-bottom: 19px;
+  margin-top: 39px;
+  margin-bottom: 39px;
 }
 .navbar-text {
-  margin-top: 19px;
-  margin-bottom: 19px;
+  margin-top: 39px;
+  margin-bottom: 39px;
 }
 @media (min-width: 768px) {
   .navbar-text {
@@ -8355,8 +8355,8 @@ h6 {
 }
 /* logo */
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   padding: 5px;
 }
 .biglogo {
@@ -8371,7 +8371,7 @@ h6 {
 }
 /* navbar */
 .navbar-brand {
-  font-size: 30px;
+  font-size: 60px;
   font-weight: 100;
   /* Museo */
 }
