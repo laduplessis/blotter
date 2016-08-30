@@ -103,7 +103,7 @@
 					</div>
 					<p>
 					<div class="smallhead">
-						29 Aug 2016
+						30 Aug 2016
 						
 						by <a class="off" href="/blotter/team/louis-du-plessis/">Louis</a>
 								
@@ -123,7 +123,7 @@
 			<div class="post">
 				<h2>Summary</h2>
 
-<p>This is a website to host a set of tutorials for BEAST 2. A core aspect of the site is that it should be straightforward to add or edit tutorials and that anyone should be able to contribute. For this reason the tutorials, and the website, are hosted on GitHub. Each tutorial is a different GitHub repository. The website is hosted on its own organization page. Although tutorials are ideally hosted as repositories on the website organization page, they can be hosted anywhere on GitHub. The website simply acts as an aggregator for tutorials.</p>
+<p>This is a website to host a set of tutorials for BEAST 2. A core aspect of the site is that it should be straightforward to add or edit tutorials and that anyone should be able to contribute. For this reason the tutorials, and the website, are hosted on GitHub. There will be an organization page containing the website and each tutorial is a different GitHub repository.  Although tutorials are ideally hosted as repositories on the website organization page, they can also be hosted anywhere on GitHub. The website simply acts as an aggregator for tutorials. (The structure of the website also makes it ideal to act as an aggregator of BEAST2 packages).</p>
 
 <h2>Website style and layout</h2>
 
@@ -140,11 +140,9 @@ A lot of the things are great and should be left alone, but some other things sh
 
 <p>The website is built using Jekyll, which creates a static site. That means there are no databases etc. so the site is faster, simpler and more secure.  New pages can easily be added as markdown files with a yaml header (which minimizes the amount of html that needs to be typed). To parse the markdown files to html I am using redcarpet, simply because Trevor used it, but this could be changed to kramdown or pandoc. </p>
 
-<p>Each tutorial is a separate GitHub repository. The reasons for this decision are below. A ruby script clones each repository listed in the website&#39;s config file and extracts the README.md file from the repository as well as some metadata. (<strong>TODO:</strong> The script should also detect/compile the LaTeX version of the tutorial). </p>
+<p>Each tutorial is a separate GitHub repository. The reasons for this decision are given <a href="/blotter/news/Distributed-vs-Central/">here</a>. A ruby script clones each repository listed in the website&#39;s config file and extracts the <code>README.md</code> file from the repository as well as some metadata. (<strong>TODO:</strong> The script should also detect/compile/convert the LaTeX version of the tutorial). </p>
 
-<p>The website itself is currently hosted on GitHub itself, using github-pages. This is free, but has some limitations, e.g. we can&#39;t use a webhook to automatically run the ruby script when a tutorial is updated, but need to do it manually. </p>
-
-<p>The one main departure from normal Markdown is giving up the easy way of entering figures for injecting html code instead. This is to allow rescaling, make it easy to add captions and facilitate easy conversion to LaTeX. </p>
+<p>The website itself is currently hosted on GitHub itself, using github-pages. This is free, but has some limitations, e.g. we can&#39;t use a webhook to automatically run the ruby script when a tutorial is updated, but need to do it manually. This means that someone needs to periodically update the website by recompiling and pushing to the repository, or else changes to tutorials will not be apparent on the website. If we host the site outside of GitHub this would be done automatically.</p>
 
 			</div>	
 		</div>			

@@ -123,6 +123,73 @@
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
+							<a href="/blotter/news/Website-demo/" class="off">Website style and ideas</a>
+						</div>
+						<p>
+						<div class="smallhead">
+							30 Aug 2016
+							
+							by <a class="off" href="/blotter/team/louis-du-plessis/">Louis</a>
+									
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>					
+		</div>
+
+		<div class="bigspacer"></div>
+
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">	
+				
+				<div class="post">
+					<h2>Summary</h2>
+
+<p>This is a website to host a set of tutorials for BEAST 2. A core aspect of the site is that it should be straightforward to add or edit tutorials and that anyone should be able to contribute. For this reason the tutorials, and the website, are hosted on GitHub. There will be an organization page containing the website and each tutorial is a different GitHub repository.  Although tutorials are ideally hosted as repositories on the website organization page, they can also be hosted anywhere on GitHub. The website simply acts as an aggregator for tutorials. (The structure of the website also makes it ideal to act as an aggregator of BEAST2 packages).</p>
+
+<h2>Website style and layout</h2>
+
+<p>The website is a fork of Trevor Bedford&#39;s lab website <a href="http://bedford.io">bedford.io</a>. I haven&#39;t changed much of the style so far.
+A lot of the things are great and should be left alone, but some other things should probably be changed:</p>
+
+<ul>
+<li>I don&#39;t like Trevor&#39;s navigation bar. It is overly complicated (it uses a lot of code to make a collapsible navbar that can&#39;t be collapsed). </li>
+<li>The website needs a footer.</li>
+<li>KaTeX is beautiful, but it does not support all of the LaTeX mathematics environments. If we run into problems we should switch to MathJax, which seems to work with everything (but isn&#39;t as beautiful). </li>
+</ul>
+
+<h2>Website architecture</h2>
+
+<p>The website is built using Jekyll, which creates a static site. That means there are no databases etc. so the site is faster, simpler and more secure.  New pages can easily be added as markdown files with a yaml header (which minimizes the amount of html that needs to be typed). To parse the markdown files to html I am using redcarpet, simply because Trevor used it, but this could be changed to kramdown or pandoc. </p>
+
+<p>Each tutorial is a separate GitHub repository. The reasons for this decision are given <a href="/blotter/news/Distributed-vs-Central/">here</a>. A ruby script clones each repository listed in the website&#39;s config file and extracts the <code>README.md</code> file from the repository as well as some metadata. (<strong>TODO:</strong> The script should also detect/compile/convert the LaTeX version of the tutorial). </p>
+
+<p>The website itself is currently hosted on GitHub itself, using github-pages. This is free, but has some limitations, e.g. we can&#39;t use a webhook to automatically run the ruby script when a tutorial is updated, but need to do it manually. This means that someone needs to periodically update the website by recompiling and pushing to the repository, or else changes to tutorials will not be apparent on the website. If we host the site outside of GitHub this would be done automatically.</p>
+
+				</div>	
+			</div>			
+			<div class="col-md-1"></div>
+		</div>
+	
+		<div class="bigspacer"></div>
+		<div class="spacer"></div>	
+	
+
+	</div>
+
+
+
+	
+
+	<div class="blog-post">
+		<div class="row">
+			<div class="col-md-1"></div>	
+			<div class="col-md-10">
+				<div class="media">
+					<div class="media-body">
+						<div class="title media-heading">
 							<a href="/blotter/news/Markdown-tutorials/" class="off">Markdown tutorials</a>
 						</div>
 						<p>
@@ -157,7 +224,7 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 <h3>Some things that Markdown cannot do</h3>
 
 <ul>
-<li>Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). </li>
+<li>Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). This may actually be possible to implement using javascript or by adding a Jekyll extension. </li>
 <li>Some of the less frequently used mathematical expressions. But this is only because I&#39;m using KaTeX at the moment (Mathjax can do it, but is not pretty). </li>
 </ul>
 
@@ -171,7 +238,7 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 
 <p>Markdown preprocessors by default can output the document in a variety of formats (usually html, pdf and tex). However, there is usually some more tweaking that needs to be done afterward (see <a href="http://peterlu.github.io/2014/08/03/markdown_latex_pdf.html">here</a>).</p>
 
-<p>I think it should be easy enough to write a Python or Ruby script that converts the automatic tex output into a LaTeX document with the right styles and fixes things like figures. In this way future tutorials only need to be written in Markdown and can be (almost) automatically output in pdf.</p>
+<p>I think it should be easy enough to write a Python or Ruby script that converts the automatic tex output into a LaTeX document with the right styles and fixes things like figures. In this way future tutorials only need to be written in Markdown and can be (almost) automatically output in pdf. To make it easier to convert from Markdown to LaTeX I prefer using the <code>&lt;figure&gt;</code> html tag instead of the native Markdown figure tag <code>![]()</code>. This also allows rescaling and makes it easy to add a caption and a reference to the figure. </p>
 
 				</div>	
 			</div>			
@@ -195,11 +262,11 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 				<div class="media">
 					<div class="media-body">
 						<div class="title media-heading">
-							<a href="/blotter/news/Website-demo/" class="off">Website style and ideas</a>
+							<a href="/blotter/news/Adding-a-new-tutorial/" class="off">Adding a new tutorial</a>
 						</div>
 						<p>
 						<div class="smallhead">
-							29 Aug 2016
+							30 Aug 2016
 							
 							by <a class="off" href="/blotter/team/louis-du-plessis/">Louis</a>
 									
@@ -217,30 +284,72 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 			<div class="col-md-10">	
 				
 				<div class="post">
-					<h2>Summary</h2>
+					<p>Anyone can easily contribute a tutorial to the website either by cloning or forking an existing tutorial repository. To make this easier we will also provide an empty tutorial repository.</p>
 
-<p>This is a website to host a set of tutorials for BEAST 2. A core aspect of the site is that it should be straightforward to add or edit tutorials and that anyone should be able to contribute. For this reason the tutorials, and the website, are hosted on GitHub. Each tutorial is a different GitHub repository. The website is hosted on its own organization page. Although tutorials are ideally hosted as repositories on the website organization page, they can be hosted anywhere on GitHub. The website simply acts as an aggregator for tutorials.</p>
+<h2>Cloning a repository or starting from scratch</h2>
 
-<h2>Website style and layout</h2>
-
-<p>The website is a fork of Trevor Bedford&#39;s lab website <a href="http://bedford.io">bedford.io</a>. I haven&#39;t changed much of the style so far.
-A lot of the things are great and should be left alone, but some other things should probably be changed:</p>
+<ol>
+<li>Clone the repository (or create a new repository)</li>
+<li>Write the tutorial either in Markdown or LaTeX (or both)</li>
+<li>Send an email to one of the website maintainers
 
 <ul>
-<li>I don&#39;t like Trevor&#39;s navigation bar. It is overly complicated (it uses a lot of code to make a collapsible navbar that can&#39;t be collapsed). </li>
-<li>The website needs a footer.</li>
-<li>KaTeX is beautiful, but it does not support all of the LaTeX mathematics environments. If we run into problems we should switch to MathJax, which seems to work with everything (but isn&#39;t as beautiful). </li>
+<li>If the tutorial conforms to the right style we will add it to <code>_config.yml</code> and recompile the website. The tutorial will now appear on the website. </li>
+<li>If the tutorial does not conform to the right style the contributor either has to change it or give one of us developer access to the tutorial repository so we can fix it. Then it gets added as above.</li>
+</ul></li>
+</ol>
+
+<h2>Forking a repository</h2>
+
+<ol>
+<li>Fork the repository</li>
+<li>Write the tutorial either in Markdown or LaTeX (or both)</li>
+<li>Make a pull request. </li>
+<li>We create a new repository under the organization page containing the edited tutorial and remove the pull request from the origin repository. The author of the tutorial gets developer rights on the repository.
+
+<ul>
+<li>If the tutorial conforms to the right style we will add it to <code>_config.yml</code> and recompile the website. The tutorial will now appear on the website. </li>
+<li>If the tutorial does not conform to the right style the author or one of ushas to change it or give one of us developer access to the tutorial repository so we can fix it. Then it gets added as above.</li>
+</ul></li>
+</ol>
+
+<h2>Fixing a bug in a tutorial</h2>
+
+<ol>
+<li>Fork the repository</li>
+<li>Do a pull request</li>
+<li>One of us evaluates and accepts/rejects the pull request.</li>
+</ol>
+
+<h2>Tutorial style</h2>
+
+<p>Tutorials <strong>have</strong> to contain a <code>README.md</code> file in the root. This file does not have to contain anything, but could also contain the full tutorial in Markdown format. </p>
+
+<p>If <code>README.md</code> is empty the tutorial should contain a <code>.tex</code>  or a <code>.pdf</code> file in the root. The <code>.tex</code> file should compile using <code>pdflatex</code>. </p>
+
+<p>Directory structure should be as follows:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">---------- data/
+    |
+    |----- xml/
+    |
+    |----- precooked-runs/
+    |
+    |----- scripts/
+    |
+    |----- figures/
+    |
+    |-- README.md
+    |-- biblatex_macros.tex
+    |-- preamble.tex
+
+</code></pre></div>
+<ul>
+<li><strong>data:</strong> Contains data files for use in BEAST (alignments etc.)</li>
+<li><strong>xml:</strong> BEAST control files.</li>
+<li><strong>precooked-runs:</strong> Log and tree files from a BEAST run.</li>
+<li><strong>scripts:</strong> Any additional scripts needed for pre- or postprocessing.</li>
+<li><strong>figures:</strong> Figures used in the tutorial document.</li>
 </ul>
-
-<h2>Website architecture</h2>
-
-<p>The website is built using Jekyll, which creates a static site. That means there are no databases etc. so the site is faster, simpler and more secure.  New pages can easily be added as markdown files with a yaml header (which minimizes the amount of html that needs to be typed). To parse the markdown files to html I am using redcarpet, simply because Trevor used it, but this could be changed to kramdown or pandoc. </p>
-
-<p>Each tutorial is a separate GitHub repository. The reasons for this decision are below. A ruby script clones each repository listed in the website&#39;s config file and extracts the README.md file from the repository as well as some metadata. (<strong>TODO:</strong> The script should also detect/compile the LaTeX version of the tutorial). </p>
-
-<p>The website itself is currently hosted on GitHub itself, using github-pages. This is free, but has some limitations, e.g. we can&#39;t use a webhook to automatically run the ruby script when a tutorial is updated, but need to do it manually. </p>
-
-<p>The one main departure from normal Markdown is giving up the easy way of entering figures for injecting html code instead. This is to allow rescaling, make it easy to add captions and facilitate easy conversion to LaTeX. </p>
 
 				</div>	
 			</div>			
@@ -290,11 +399,15 @@ A lot of the things are great and should be left alone, but some other things sh
 
 <p>Here are a number of arguments why I decided to go for hosting each tuturial in a separate GitHub repository:</p>
 
+<h3>Modular structure</h3>
+
+<p>A modular distributed structure where tutorials can be easily added and removed is easier to maintain and makes it easy to add/remove tutorials (a single line needs to be added to <code>_config.yml</code> and the update script rerun). </p>
+
 <h3>Bloating</h3>
 
-<p>The tutorials and the website should be separated from each other. The website source code does not contain any tutorial data except for a list of GitHub repositories. Besides from separating code (good practice) it also keeps the source repository from becoming bloated. Since tutorials contain a lot of figures / data files, it will easily become bloated. </p>
+<p>The tutorials and the website should be separated from each other. The website source code does not contain any tutorial data except for a list of GitHub repositories. Besides from separating code (best practice) it also keeps the source repository from becoming bloated (since tutorials contain a lot of figures/data files).</p>
 
-<p>On the other hand the production version of the website does contain all the tutorials. It is not important to keep this from becoming bloated. The production version is only a copy of the compiled website, which can easily be overwritten if it becomes too bloated (the history is not important). In fact, it should not be a repository at all, but only is one because it is hosted on GitHub. (keep in mind that at the moment I have both the production and development versions of the site in the same repo, because this is only a demo). </p>
+<p>On the other hand the production version of the website <strong>does</strong> contain all the tutorials. It is not important to keep this repository from becoming bloated. The production version is only a copy of the compiled website, which is not stored in the development repository and can easily be overwritten if it becomes too bloated (the history is not important here). In fact, it should not be a repository at all, but only is one because it is hosted on GitHub. (At the moment I have both the production and development versions of the site in the same repo, because this is only a demo and I wanted to see if it could be done). </p>
 
 <h3>Assigning blame (and metadata)</h3>
 
@@ -302,7 +415,7 @@ A lot of the things are great and should be left alone, but some other things sh
 
 <p>It is also best practice to keep tutorials separate, preventing contributors from messing with tutorials they should not have access to.</p>
 
-<p>In addition, it allows us to extract metadata for tutorials and display it on the website - last updated, latest commits, owner, contributors etc. </p>
+<p>In addition, it allows us to extract individual metadata for tutorials and display it on the website - last updated, latest commits, owner, contributors etc. </p>
 
 <h2>Central</h2>
 
@@ -310,29 +423,31 @@ A lot of the things are great and should be left alone, but some other things sh
 
 <h3>Everything is easy to find</h3>
 
-<p>One clone gives you all the tutorials. One fetch + merge gives you all updates. </p>
+<p>One clone gives you all the tutorials. One fetch and merge gives you all updates. </p>
 
 <h4>Counterargument</h4>
 
-<p>There is already a script for cloning all the repositories. It should be possible to provide a clone / download option for all tutorials on the website. </p>
+<p>There is already a script for cloning all the repositories. It should be possible to provide a clone/download option for all tutorials on the website. </p>
 
-<p>The website automatically lists tutorials in the order they were last updated, along with the dates they were updated. This makes it easy to track when tutorials have been added / changed. Simply looking at a GitHub repository for all tutorials means that you see each commit, not only which tutorials have been changed, which can be confusing. </p>
+<p>Moreover, since the website automatically lists tutorials in the order they were last updated, along with the dates they were updated it&#39;s easy to see which tutorials have been added or changed.Simply looking at a GitHub repository for all tutorials means that you see each commit, not only which tutorials have been changed, which can be confusing (e.g. if someone made a 100 commits to only one tutorial, or cleaned up formatting on all tutorials). </p>
 
 <h3>Share data and figures</h3>
 
-<p>Having all tutorials in the same repository makes it possible to share resources between tutorials. </p>
+<p>Having all tutorials in the same repository makes it possible to share resources between tutorials </p>
 
 <h4>Counterargument</h4>
 
-<p>While duplication is generally not a good idea, having one tutorial using resources of another makes it possible to break several tutorials by changing one file (tutorials are no longer self-contained units, but are all connected to each other). This makes it difficult for someone not </p>
+<p>While duplication is generally not a good idea, having one tutorial using resources of another makes it possible to break several tutorials by changing one file (tutorials are no longer self-contained units, but are all connected to each other). This makes it difficult for someone not familiar with all of the tutorials to modify a single tutorial (there is no easy way to list which tutorials use which files/figures).</p>
 
 <h3>It&#39;s easier for anyone to contribute</h3>
 
-<p>To contribute your own tutorial, simply fork the repository, add your tutorial and do a pull request. </p>
+<p>To contribute your own tutorial, simply fork the repository, add your tutorial or fix a bug and do a pull request. </p>
 
 <h4>Counterargument</h4>
 
-<p>I don&#39;t have no good counterargument to this - it does seem to be the easier solution. But see <a href="">here</a> for my ideas of how contributors can add new repositories in the modular, distributed format. </p>
+<p>Fixing bugs can still be done by a simple pull request, only on the repository of each individual tutorial. </p>
+
+<p>I agree that a modular structure adds a greater activation energy for external contributors to add their own tutorial. However, I don&#39;t think the extra overhead is outrageous (see <a href="/blotter/news/Adding-a-new-tutorial/">here</a>). However I <strong>don&#39;t</strong> think a modular structure adds extra maintenance overhead. With a central structure every time a new tutorial is added <strong>all</strong> of the tutorials need to be checked and tested (of course no-one will do this, but it is possible that the contributor accidentally edited files belonging to another tutorial). With a modular structure the contributor <em>cannot</em> edit other tutorials or the website. This is far more secure and makes it easier for us to maintain. </p>
 
 				</div>	
 			</div>			
@@ -994,60 +1109,6 @@ like above.</p>
 				
 				<div class="post">
 					<p><a href="https://neherlab.wordpress.com/">Richard Neher</a> and I have compiled a <a href="http://nextflu.org/reports/feb-2016/">report on recent patterns of seasonal influenza virus evolution</a> with projections for future clade behavior based on the <a href="http://nextflu.org">nextflu</a> platform. This is designed to be looking forward to the 2016-2017 flu season. Lots of interesting behavior in H3N2 and H1N1pdm viruses. Within H3N2, the clade 3c2.a has continued to predominate throughout the last year and now genetic diversity is accumulating within 3c2.a. The issue is now watching for new variants within 3c2.a that may be antigenically distinct and thus spread through the virus population. H1N1pdm viruses have seen the rapid rise a novel clade denoted 6b.2 during 2015. This clade is demarcated by the substitutions 84N/162N/216T. The joint substitutions 162N/216T have risen especially rapidly with this season&#39;s Northern Hemisphere epidemic comprised of almost entirely 6b.2 viruses. However, detailed antigenic characterization is necessary to determine whether the seasonal influenza vaccine warrants updating.</p>
-
-				</div>	
-			</div>			
-			<div class="col-md-1"></div>
-		</div>
-	
-		<div class="bigspacer"></div>
-		<div class="spacer"></div>	
-	
-
-	</div>
-
-
-
-	
-
-	<div class="blog-post">
-		<div class="row">
-			<div class="col-md-1"></div>	
-			<div class="col-md-10">
-				<div class="media">
-					<div class="media-body">
-						<div class="title media-heading">
-							<a href="/blotter/news/rtss-sieve/" class="off">Strain-specific vaccine efficacy in the RTS,S malaria vaccine</a>
-						</div>
-						<p>
-						<div class="smallhead">
-							26 Oct 2015
-							
-							by <a class="off" href="/blotter/team/trevor-bedford/">trvrb</a>
-									
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-1"></div>					
-		</div>
-
-		<div class="bigspacer"></div>
-
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-10">	
-				
-				
-				<a href="/blotter/papers/neafsey-rtss-sieve/">
-					<img class="offset" src="/blotter/images/blog/rtss_sieve.png">
-				</a>			
-								
-				
-				<div class="post">
-					<p>In collaboration with <a href="https://www.broadinstitute.org/bios/daniel-neafsey">Dan Neafsey</a> at the Broad Institute, <a href="http://www.hsph.harvard.edu/dyann-wirth/">Dyann Wirth</a> at Harvard, <a href="https://www.fredhutch.org/en/labs/profiles/gilbert-peter.html">Peter Gilbert</a> and <a href="https://www.fredhutch.org/en/labs/profiles/juraska-michal.html">Michal Juraska</a> at the Fred Hutch and a large team of researchers, we&#39;ve just published <a href="/papers/neafsey-rtss-sieve/">a paper</a> in the <a href="http://dx.doi.org/10.1056/NEJMoa1505819">New England Journal of Medicine</a> showing strain-specific vaccine efficacy in a recent malaria vaccine trial. We found that the <a href="https://en.wikipedia.org/wiki/RTS,S">RTS,S malaria vaccine</a> worked better against strains that were genetically matched to the vaccine antigen compared to unmatched strains. The right hand figure shows that across study sites, parasites matched to the vaccine strain (3D7) are overrepresented among the control group, indicating that the vaccine better protected against infection by 3D7 than against other strains. Proper statistical analysis shows that there was a 1-year vaccine efficacy of 50% against strains perfectly matched to the vaccine antigen and a 1-year vaccine efficacy of 33% against unmatched strains. The vaccine strain 3D7 is at low (~10%) frequency in Sub-Saharan Africa. This suggests that vaccine efficacy could be straight-forwardly improved by just swapping 3D7 for a more common haplotype.</p>
-
-<p>It&#39;s interesting to see strain-specific vaccine for malaria, suggesting that like flu, a good vaccine requires matching to the circulating pathogen strains. This was a fun study to participate in. Hopefully, we could see further improvements to the RTS,S vaccine. Even at current efficacy levels, RTS,S is estimated to have a cost effectiveness of <a href="http://www.malariajournal.com/content/13/1/66">~$150 per disability-adjusted life year</a> saved.</p>
 
 				</div>	
 			</div>			

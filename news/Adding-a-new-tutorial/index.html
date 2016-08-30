@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Markdown tutorials</title>
+	<title>Adding a new tutorial</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- RSS feed -->
@@ -99,7 +99,7 @@
 			<div class="media">
 				<div class="media-body">
 					<div class="title media-heading">
-						<a href="/blotter/news/Markdown-tutorials/" class="off">Markdown tutorials</a>
+						<a href="/blotter/news/Adding-a-new-tutorial/" class="off">Adding a new tutorial</a>
 					</div>
 					<p>
 					<div class="smallhead">
@@ -121,33 +121,72 @@
 		<div class="col-md-10">	
 			
 			<div class="post">
-				<p>Since the website is built in Jekyll it can display Markdown pages easily. This opens up the possibility to write tutorials directly in Markdown. Markdown is much more human-readable than LaTeX and flexible enough to still provide practically the same functionality. In addition Markdown can easily be converted to practically any end format.</p>
+				<p>Anyone can easily contribute a tutorial to the website either by cloning or forking an existing tutorial repository. To make this easier we will also provide an empty tutorial repository.</p>
 
-<p>The way the site is built at the moment it can aggregate tutorials written in both Markdown and in LaTeX. For tutorials written in LaTeX the site will only display the contents of the <code>README.md</code> file, and not the tutorial itself (see ...). Tutorials written in Markdown will additionally display the tutorial on the website (see ...). All tutorials will display links to the GitHub repository and pdfs in the sidebar.</p>
+<h2>Cloning a repository or starting from scratch</h2>
 
-<h2>Conversion from LaTeX to Markdown</h2>
-
-<p>This should be easy enough. Markdown is very easy to learn (see <a href="/blotter/news/Style/">here</a> for a style guide).
-For the most part the tutorial text can be copied verbatim and only the LaTeX commands need to be changed (usually to something much shorter and easier to read). </p>
-
-<h3>Some things that Markdown cannot do</h3>
+<ol>
+<li>Clone the repository (or create a new repository)</li>
+<li>Write the tutorial either in Markdown or LaTeX (or both)</li>
+<li>Send an email to one of the website maintainers
 
 <ul>
-<li>Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). This may actually be possible to implement using javascript or by adding a Jekyll extension. </li>
-<li>Some of the less frequently used mathematical expressions. But this is only because I&#39;m using KaTeX at the moment (Mathjax can do it, but is not pretty). </li>
-</ul>
+<li>If the tutorial conforms to the right style we will add it to <code>_config.yml</code> and recompile the website. The tutorial will now appear on the website. </li>
+<li>If the tutorial does not conform to the right style the contributor either has to change it or give one of us developer access to the tutorial repository so we can fix it. Then it gets added as above.</li>
+</ul></li>
+</ol>
 
-<h3>Some things Markdown can do but I have not implemented yet</h3>
+<h2>Forking a repository</h2>
+
+<ol>
+<li>Fork the repository</li>
+<li>Write the tutorial either in Markdown or LaTeX (or both)</li>
+<li>Make a pull request. </li>
+<li>We create a new repository under the organization page containing the edited tutorial and remove the pull request from the origin repository. The author of the tutorial gets developer rights on the repository.
 
 <ul>
-<li>Bibtex references, using Jekyll-Scholar.</li>
+<li>If the tutorial conforms to the right style we will add it to <code>_config.yml</code> and recompile the website. The tutorial will now appear on the website. </li>
+<li>If the tutorial does not conform to the right style the author or one of ushas to change it or give one of us developer access to the tutorial repository so we can fix it. Then it gets added as above.</li>
+</ul></li>
+</ol>
+
+<h2>Fixing a bug in a tutorial</h2>
+
+<ol>
+<li>Fork the repository</li>
+<li>Do a pull request</li>
+<li>One of us evaluates and accepts/rejects the pull request.</li>
+</ol>
+
+<h2>Tutorial style</h2>
+
+<p>Tutorials <strong>have</strong> to contain a <code>README.md</code> file in the root. This file does not have to contain anything, but could also contain the full tutorial in Markdown format. </p>
+
+<p>If <code>README.md</code> is empty the tutorial should contain a <code>.tex</code>  or a <code>.pdf</code> file in the root. The <code>.tex</code> file should compile using <code>pdflatex</code>. </p>
+
+<p>Directory structure should be as follows:</p>
+<div class="highlight"><pre><code class="language-" data-lang="">---------- data/
+    |
+    |----- xml/
+    |
+    |----- precooked-runs/
+    |
+    |----- scripts/
+    |
+    |----- figures/
+    |
+    |-- README.md
+    |-- biblatex_macros.tex
+    |-- preamble.tex
+
+</code></pre></div>
+<ul>
+<li><strong>data:</strong> Contains data files for use in BEAST (alignments etc.)</li>
+<li><strong>xml:</strong> BEAST control files.</li>
+<li><strong>precooked-runs:</strong> Log and tree files from a BEAST run.</li>
+<li><strong>scripts:</strong> Any additional scripts needed for pre- or postprocessing.</li>
+<li><strong>figures:</strong> Figures used in the tutorial document.</li>
 </ul>
-
-<h2>Conversion from Markdown to LaTeX</h2>
-
-<p>Markdown preprocessors by default can output the document in a variety of formats (usually html, pdf and tex). However, there is usually some more tweaking that needs to be done afterward (see <a href="http://peterlu.github.io/2014/08/03/markdown_latex_pdf.html">here</a>).</p>
-
-<p>I think it should be easy enough to write a Python or Ruby script that converts the automatic tex output into a LaTeX document with the right styles and fixes things like figures. In this way future tutorials only need to be written in Markdown and can be (almost) automatically output in pdf. To make it easier to convert from Markdown to LaTeX I prefer using the <code>&lt;figure&gt;</code> html tag instead of the native Markdown figure tag <code>![]()</code>. This also allows rescaling and makes it easy to add a caption and a reference to the figure. </p>
 
 			</div>	
 		</div>			
