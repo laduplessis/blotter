@@ -6,23 +6,30 @@ author: Louis du Plessis
 
 ## Summary
 
-BEAST is a complex program and with the resources available on the internet it is challenging to learn BEAST without the help of an expert. 
-Workshops, summer schools and lectures can only reach a handful of the people interested in performing BEAST analyses. 
-The **Taming the BEAST** website will provide a platform that collects all tutorials for BEAST 2 (and perhaps BEAST 1 as well) in one central repository. 
-In this way a set of well-curated and up-to-date tutorials will be available for the community at large. 
-
-
-A core aspect of the site is that it should be straightforward to add or edit tutorials and that anyone should be able to contribute. For this reason the tutorials, and the website, are hosted on GitHub. Each tutorial is a different GitHub repository. The website is hosted on its own organization page. Although tutorials are ideally hosted as repositories on the website organization page, they can be hosted anywhere on GitHub. The website simply acts as an aggregator for tutorials.
-
-
+This is a website to host a set of tutorials for BEAST 2. A core aspect of the site is that it should be straightforward to add or edit tutorials and that anyone should be able to contribute. For this reason the tutorials, and the website, are hosted on GitHub. Each tutorial is a different GitHub repository. The website is hosted on its own organization page. Although tutorials are ideally hosted as repositories on the website organization page, they can be hosted anywhere on GitHub. The website simply acts as an aggregator for tutorials.
 
 
 ## Website style and layout
 
-Based on Trevor Bedford's lab website [bedford.io](http://bedford.io). I haven't changed much so far, besides text and logos. It can (and probably) should be changed. 
-A lot of the things are great and should be left alone (font and KaTeX for equations are both beautiful). Some other things I think should probably have a high priority: 
+The website is a fork of Trevor Bedford's lab website [bedford.io](http://bedford.io). I haven't changed much of the style so far.
+A lot of the things are great and should be left alone, but some other things should probably be changed:
 
-- I don't like Trevor's navigation bar. It is overly complicated (it takes a lot of code to make a collapsible navbar that can't be collapsed). 
+- I don't like Trevor's navigation bar. It is overly complicated (it uses a lot of code to make a collapsible navbar that can't be collapsed). 
 - The website needs a footer.
-- Team should be removed.
-- KaTeX is beautiful, but it does not support all the LaTeX mathematics environments. If we run into problems we should switch to MathJax, which seems to work with everything (but isn't as beautiful). 
+- KaTeX is beautiful, but it does not support all of the LaTeX mathematics environments. If we run into problems we should switch to MathJax, which seems to work with everything (but isn't as beautiful). 
+
+
+## Website architecture
+
+The website is built using Jekyll, which creates a static site. That means there are no databases etc. so the site is faster, simpler and more secure.  New pages can easily be added as markdown files with a yaml header (which minimizes the amount of html that needs to be typed). To parse the markdown files to html I am using redcarpet, simply because Trevor used it, but this could be changed to kramdown or pandoc. 
+
+Each tutorial is a separate GitHub repository. The reasons for this decision are below. A ruby script clones each repository listed in the website's config file and extracts the README.md file from the repository as well as some metadata. (**TODO:** The script should also detect/compile the LaTeX version of the tutorial). 
+
+The website itself is currently hosted on GitHub itself, using github-pages. This is free, but has some limitations, e.g. we can't use a webhook to automatically run the ruby script when a tutorial is updated, but need to do it manually. 
+
+
+
+
+
+
+

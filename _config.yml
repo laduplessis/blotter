@@ -41,6 +41,3 @@ exclude:
 tutorials:
   - laduplessis/Introduction-to-BEAST2
   - laduplessis/SkylineTutorial
-  - trvrb/haplotypes
-  - alvason/infectious-pulse
-  - trvrb/phylodynamics-lecture

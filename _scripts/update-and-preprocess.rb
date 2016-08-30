@@ -19,4 +19,4 @@ end
 
 Dir.chdir($basedir)
 `ruby _scripts/preprocess-tutorial-markdown.rb`
-`ruby _scripts/generate-tutorial-data.rb`
+#{}`ruby _scripts/generate-tutorial-data.rb`
