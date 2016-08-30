@@ -6,7 +6,7 @@ author: Louis du Plessis
 
 Since the website is built in Jekyll it can display Markdown pages easily. This opens up the possibility to write tutorials directly in Markdown. Markdown is much more human-readable than LaTeX and flexible enough to still provide practically the same functionality. In addition Markdown can easily be converted to practically any end format.
 
-The way the site is built at the moment it can aggregate tutorials written in both Markdown and in LaTeX. For tutorials written in LaTeX the site will only display the contents of the `README.md` file, and not the tutorial itself (see ...). Tutorials written in Markdown will additionally display the tutorial on the website (see ...). All tutorials will display links to the GitHub repository and pdfs in the sidebar.
+The way the site is built at the moment it can aggregate tutorials written in both Markdown and in LaTeX. For tutorials written only in LaTeX the site will only display the contents of the `README.md` file, and not the tutorial itself (see the skyline tutorial). Tutorials written in Markdown will additionally display the tutorial on the website (see the introduction to BEAST2 tutorial). All tutorials will display links to the GitHub repository and PDFs in the sidebar.
 
 ## Conversion from LaTeX to Markdown
 
@@ -15,13 +15,12 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 
 
 ### Some things that Markdown cannot do
-- Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). This may actually be possible to implement using javascript or by adding a Jekyll extension. 
+- Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). This may actually be possible to implement using javascript or by adding a Jekyll extension. However, since tutorials tend not to be too complex it is probably easy enough to maintain a manual counter (as I have done for the introduction to BEAST2 tutorial).
 - Some of the less frequently used mathematical expressions. But this is only because I'm using KaTeX at the moment (Mathjax can do it, but is not pretty). 
 
 
 ### Some things Markdown can do but I have not implemented yet
-- Bibtex references, using Jekyll-Scholar.
-
+- Bibtex references, using [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar).
 
 
 ## Conversion from Markdown to LaTeX

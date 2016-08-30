@@ -40,4 +40,6 @@ exclude:
 
 tutorials:
   - laduplessis/Introduction-to-BEAST2
-  - laduplessis/SkylineTutorial
+  - laduplessis/Skyline-plots-tutorial
+  - tgvaughan/feast
+  - tgvaughan/MASTER

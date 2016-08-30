@@ -30,7 +30,7 @@ Anyone can easily contribute a tutorial to the website either by cloning or fork
 
 
 ## Tutorial style
-Tutorials **have** to contain a `README.md` file in the root. This file does not have to contain anything, but could also contain the full tutorial in Markdown format. 
+Tutorials **must** contain a `README.md` file in the root. This file does not have to contain anything, but could also contain the full tutorial in Markdown format. 
 
 If `README.md` is empty the tutorial should contain a `.tex`  or a `.pdf` file in the root. The `.tex` file should compile using `pdflatex`. 
 
@@ -58,3 +58,10 @@ Directory structure should be as follows:
 - **precooked-runs:** Log and tree files from a BEAST run.
 - **scripts:** Any additional scripts needed for pre- or postprocessing.
 - **figures:** Figures used in the tutorial document.
+
+At the moment the website simply detects PDF files in the root and displays those, as well as the `README.md` file. We should add a script to: 
+
+1. Convert `README.md` to a `.tex` file.
+1. Compile any `.tex` files in the root to PDFs. 
+
+That would make it unnecessary to store the compiled PDFs in the tutorial repository. 
