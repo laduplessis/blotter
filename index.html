@@ -72,7 +72,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="{{ site.baseurl }}/projects/">recently updated tutorials</a>
+			<a class="off" href="{{ site.baseurl }}/tutorials/">recently updated tutorials</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -84,18 +84,18 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-edit fa-fw"></i>
-				<a class="off" href="{{ tutorial.url | prepend: site.baseurl}}">
+				<a class="off" href="{{ tutorial.url | prepend: site.baseurl }}">
 				{{ tutorial.title }} - {{ tutorial.description }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				Updated
-				<a class="off" href="{{ tutorial.commits.first.url | prepend: site.baseurl}}">
+				<a class="off" href="{{ tutorial.commits.first.url }}">
 				{{ tutorial.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ tutorial.commits.first.author_url | prepend: site.baseurl}}">				
+				<a class="off" href="{{ tutorial.commits.first.author_url }}">				
 				{{ tutorial.commits.first.author_login }}
 				</a>
 			</div>

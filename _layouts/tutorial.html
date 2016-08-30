@@ -43,6 +43,21 @@ categories:
 	<div class="col-md-3">
 		<div class="bigspacer"></div>
 		<div class="smallhead">
+			PDF
+		</div>		
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			{% for pdf in tutorial.pdfs %}
+				<div class="smallspacer"></div>
+				<li> 
+					<i class="fa fa-file-text-o fa-fw"></i>
+					<a class="off" href="{{ pdf | prepend: '/' | prepend: site.baseurl }}">{{ pdf | split: '/' | last }}</a>	
+				</li>
+			{% endfor %}
+			</ul>
+		</div>		
+		<div class="spacer"></div>
+		<div class="smallhead">
 			Source code
 		</div>	
 		<div class="pad-left note">

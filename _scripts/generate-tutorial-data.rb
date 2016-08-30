@@ -46,6 +46,9 @@ module Tutorials
 				tutorial_description = octokit_repo.description
 				tutorial_url = "/tutorials/#{tutorial_title}/"
 				tutorial_date = octokit_repo.updated_at
+
+				# Get all pdfs in the root
+				pdf_array = Dir.glob("tutorials/#{tutorial_title}/*.pdf")
 			
 				# load contributor metadata
 				octokit_contributors = client.contributors(repo)					
@@ -92,7 +95,8 @@ module Tutorials
 					"description" => tutorial_description,
 					"url" => tutorial_url,
 					"contributors" => tutorial_contributors,
-					"commits" => tutorial_commits
+					"commits" => tutorial_commits,
+					"pdfs" => pdf_array
 				)
 			
 				# sort by date
