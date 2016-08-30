@@ -123,7 +123,7 @@
 			<div class="post">
 				<p>Since the website is built in Jekyll it can display Markdown pages easily. This opens up the possibility to write tutorials directly in Markdown. Markdown is much more human-readable than LaTeX and flexible enough to still provide practically the same functionality. In addition Markdown can easily be converted to practically any end format.</p>
 
-<p>The way the site is built at the moment it can aggregate tutorials written in both Markdown and in LaTeX. For tutorials written in LaTeX the site will only display the contents of the <code>README.md</code> file, and not the tutorial itself (see ...). Tutorials written in Markdown will additionally display the tutorial on the website (see ...). All tutorials will display links to the GitHub repository and pdfs in the sidebar.</p>
+<p>The way the site is built at the moment it can aggregate tutorials written in both Markdown and in LaTeX. For tutorials written only in LaTeX the site will only display the contents of the <code>README.md</code> file, and not the tutorial itself (see the skyline tutorial). Tutorials written in Markdown will additionally display the tutorial on the website (see the introduction to BEAST2 tutorial). All tutorials will display links to the GitHub repository and PDFs in the sidebar.</p>
 
 <h2>Conversion from LaTeX to Markdown</h2>
 
@@ -133,14 +133,15 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 <h3>Some things that Markdown cannot do</h3>
 
 <ul>
-<li>Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). This may actually be possible to implement using javascript or by adding a Jekyll extension. </li>
+<li>Keep rolling counters on figures, tables etc. and have the number automatically inserted when referencing an image (but you can add in an anchor and reference figures, tables etc.). This may actually be possible to implement using javascript or by adding a Jekyll extension. However, since tutorials tend not to be too complex it is probably easy enough to maintain a manual counter (as I have done for the introduction to BEAST2 tutorial).</li>
 <li>Some of the less frequently used mathematical expressions. But this is only because I&#39;m using KaTeX at the moment (Mathjax can do it, but is not pretty). </li>
 </ul>
 
 <h3>Some things Markdown can do but I have not implemented yet</h3>
 
 <ul>
-<li>Bibtex references, using Jekyll-Scholar.</li>
+<li>Bibtex references, using <a href="https://github.com/inukshuk/jekyll-scholar">Jekyll-Scholar</a>.</li>
+<li>Attribute the original author of the tutorial in the header</li>
 </ul>
 
 <h2>Conversion from Markdown to LaTeX</h2>

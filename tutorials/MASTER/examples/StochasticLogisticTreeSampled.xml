@@ -1,0 +1,39 @@
+<!-- Generate an inheritance tree from the stochastic logistic model,
+     then prune all nodes except the ancestors of a randomly selected
+     set of leaves.  Demonstrates the use of the LineageFilter postprocessor. -->
+
+<beast version='2.0' namespace='master:master.model:master.conditions:master.postprocessors:master.steppers:master.outputs'>
+    <run spec='InheritanceTrajectory'
+         simulationTime="100"
+         samplePopulationSizes="true"
+         verbosity='1'>
+        
+        <model spec='Model'>
+            <population spec='Population' populationName='X' id='X'/>
+            <reaction spec='Reaction' reactionName='Birth' rate="1.0">
+                X -> 2X
+            </reaction>
+            <reaction spec='Reaction' reactionName='Death' rate="0.01">
+                2X -> X
+            </reaction>
+        </model>                
+
+        <initialState spec='InitState'>
+            <populationSize spec='PopulationSize' population='@X' size='9'/>
+            <lineageSeed spec='Individual' population='@X'/>
+        </initialState>
+        
+        <lineageEndCondition spec='LineageEndCondition' nLineages="0" isRejection="true"/>      
+        
+        <inheritancePostProcessor spec='LineageSampler'
+                                  nSamples="10"
+                                  samplingTime="20"
+                                  reverseTime="false"
+                                  noClean="false"/>
+        
+        <!-- Use post-simulation condition to ensure we actually have 10 samples. -->
+        <postSimCondition spec='LeafCountPostSimCondition' nLeaves="10" exact="true"/>
+        
+        <output spec='NexusOutput' fileName='StochasticLogisticTreeSampled_out.nexus'/>
+    </run>
+</beast>

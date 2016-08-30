@@ -1,0 +1,42 @@
+<!-- Simple discrete 1D diffusion model illustrating some aspects of
+     expression-based reaction scheme creation.  -->
+
+<beast version='2.0' namespace='master:master.model:master.outputs:master.steppers'>
+    <run spec='Trajectory'
+         simulationTime='20'
+         nSamples="100"
+         verbosity='2'>
+        
+         <!--stepper spec='GillespieStepper' /-->
+        <!--stepper spec='SALStepper' stepSize="0.1" /-->
+        <stepper spec='RateEquationStepper' stepSize="0.005" />
+
+        <model spec='Model' id='model'>
+            <populationType spec='PopulationType' typeName="X" dim="400" id="X"/>
+
+            <!-- Define a function which returns true only for a subset of reactions:-->
+            <function spec='Function' id="inSlowRegion" params="x y">
+                <![CDATA[
+                x>=150 && x<=250 && y>=150 && y<=250
+                ]]>
+            </function>
+
+            <reaction spec='Reaction' reactionName="Migration" rate="50.0">
+                <rateMultiplier spec='RateMultiplier' value="inSlowRegion(i,j) ? 0.2 : 1.0"/>
+
+                <!-- Include migration between neighbours -->
+                <predicate spec='Predicate' value="j == i+1 || j== i-1"/>
+
+                X[i] -> X[j]
+            </reaction>
+        </model>
+
+        <initialState spec='InitState'>
+            <populationSize spec='PopulationSize'>
+                X[200] := 1000
+            </populationSize>
+        </initialState>
+        
+        <output spec='JsonOutput' fileName='$(filebase)_output.json'/>
+    </run>
+</beast>

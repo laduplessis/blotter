@@ -160,7 +160,7 @@
 
 <h2>Tutorial style</h2>
 
-<p>Tutorials <strong>have</strong> to contain a <code>README.md</code> file in the root. This file does not have to contain anything, but could also contain the full tutorial in Markdown format. </p>
+<p>Tutorials <strong>must</strong> contain a <code>README.md</code> file in the root. This file does not have to contain anything, but could also contain the full tutorial in Markdown format. </p>
 
 <p>If <code>README.md</code> is empty the tutorial should contain a <code>.tex</code>  or a <code>.pdf</code> file in the root. The <code>.tex</code> file should compile using <code>pdflatex</code>. </p>
 
@@ -187,6 +187,15 @@
 <li><strong>scripts:</strong> Any additional scripts needed for pre- or postprocessing.</li>
 <li><strong>figures:</strong> Figures used in the tutorial document.</li>
 </ul>
+
+<p>At the moment the website simply detects PDF files in the root and displays those, as well as the <code>README.md</code> file. We should add a script to: </p>
+
+<ol>
+<li>Convert <code>README.md</code> to a <code>.tex</code> file.</li>
+<li>Compile any <code>.tex</code> files in the root to PDFs. </li>
+</ol>
+
+<p>That would make it unnecessary to store the compiled PDFs in the tutorial repository. </p>
 
 			</div>	
 		</div>			
