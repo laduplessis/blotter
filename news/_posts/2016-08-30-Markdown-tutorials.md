@@ -21,11 +21,13 @@ For the most part the tutorial text can be copied verbatim and only the LaTeX co
 
 ### Some things Markdown can do but I have not implemented yet
 - Bibtex references, using [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar).
+- Attribute the original author of the tutorial in the header
 
 
 ## Conversion from Markdown to LaTeX
 Markdown preprocessors by default can output the document in a variety of formats (usually html, pdf and tex). However, there is usually some more tweaking that needs to be done afterward (see [here](http://peterlu.github.io/2014/08/03/markdown_latex_pdf.html)).
 
 I think it should be easy enough to write a Python or Ruby script that converts the automatic tex output into a LaTeX document with the right styles and fixes things like figures. In this way future tutorials only need to be written in Markdown and can be (almost) automatically output in pdf. To make it easier to convert from Markdown to LaTeX I prefer using the `<figure>` html tag instead of the native Markdown figure tag `![]()`. This also allows rescaling and makes it easy to add a caption and a reference to the figure. 
+
 
 
