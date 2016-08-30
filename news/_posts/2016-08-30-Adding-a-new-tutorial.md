@@ -4,23 +4,16 @@ title: Adding a new tutorial
 author: Louis du Plessis
 ---
 
-Anyone can easily contribute a tutorial to the website either by cloning or forking an existing tutorial repository. To make this easier we will also provide an empty tutorial repository.
+Anyone can easily contribute a tutorial to the website either by cloning an existing tutorial repository. To make this easier we will also provide an empty tutorial repository.
 
 ## Cloning a repository or starting from scratch
-1. Clone the repository (or create a new repository)
+1. Clone and rename an existing repository (or create a new repository)
 1. Write the tutorial either in Markdown or LaTeX (or both)
-1. Send an email to one of the website maintainers
+1. Contact one of the website maintainers
 	- If the tutorial conforms to the right style we will add it to `_config.yml` and recompile the website. The tutorial will now appear on the website. 
 	- If the tutorial does not conform to the right style the contributor either has to change it or give one of us developer access to the tutorial repository so we can fix it. Then it gets added as above.
+1. If the author wants to, he/she can transfer ownership of the tutorial to us, so that it is hosted on the organization page.
 
-
-## Forking a repository
-1. Fork the repository
-1. Write the tutorial either in Markdown or LaTeX (or both)
-1. Make a pull request. 
-1. We create a new repository under the organization page containing the edited tutorial and remove the pull request from the origin repository. The author of the tutorial gets developer rights on the repository.
-	- If the tutorial conforms to the right style we will add it to `_config.yml` and recompile the website. The tutorial will now appear on the website. 
-	- If the tutorial does not conform to the right style the author or one of ushas to change it or give one of us developer access to the tutorial repository so we can fix it. Then it gets added as above.
 
 
 ## Fixing a bug in a tutorial
