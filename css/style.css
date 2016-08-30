@@ -1454,10 +1454,13 @@ abbr[data-original-title] {
   text-transform: uppercase;
 }
 blockquote {
-  padding: 11px 22px;
-  margin: 0 0 22px;
-  font-size: 17.5px;
-  border-left: 5px solid #eeeeee;
+  padding: 10.5px;
+  margin: 0 0 11px;
+  font-size: 13px;
+  line-height: 1.6;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  background-color: #eeeef8;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -8522,6 +8525,11 @@ blockquote {
 }
 blockquote p {
   font-size: 14px;
+}
+figcaption {
+  text-align: center;
+  font-size: 90%;
+  font-style: italic;
 }
 .breadcrumb {
   padding: 0px 0px;
