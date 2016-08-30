@@ -85,7 +85,7 @@ categories:
 			<div class="note">
 				<i class="fa fa-edit fa-fw"></i>
 				<a class="off" href="{{ tutorial.url | prepend: site.baseurl }}">
-				{{ tutorial.title }} - {{ tutorial.description }}
+				{{ tutorial.title | replace: '-', ' ' }} - {{ tutorial.description }}
 				</a>
 			</div>
 			<div class="smallspacer"></div>

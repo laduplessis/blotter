@@ -23,7 +23,7 @@ categories:
 					{% endif %}
 				{% endfor %}
 				{% if crumb == page.title %}
-				<li>{{ name }}</li>
+				<li>{{ name | replace: '-', ' ' }}</li>
 				{% else %}
 				<li><a class="off" href="{{ url | replace: 'index.html', '' }}">{{ name }}</a></li>
 				{% endif %}

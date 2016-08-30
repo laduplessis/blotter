@@ -35,6 +35,9 @@ mdarray.each { |md|
 		out.puts "layout: tutorial"
 		if tutorial_name != nil
 			title = md.sub(/^.*tutorials\//, '').sub(/.md$/, '').sub(/index$/, '')
+			#if title.inclue? '-'
+			#	title = title.gsub! '-', ' '
+
 			out.puts "title: #{title}"		
 			out.puts "tutorial: #{tutorial_name}"
 			out.puts "permalink: /:path/:basename:output_ext"
